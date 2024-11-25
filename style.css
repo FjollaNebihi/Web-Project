@@ -1,0 +1,84 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+p{
+  margin:0;
+}
+
+.header{
+  justify-content:center;
+  height:50px;
+  background-color: rgb(255,221,226);
+  color:black;
+  align-content: center;
+  text-align:center;
+  font-size:17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo{
+  height:75px;
+  display: flex;
+  background-color: rgb(241,25,144);
+  text-align:center;
+  justify-content: center;
+}
+.bliss{
+  font-size:35px;
+  font-family:fantasy;
+  letter-spacing:5px;
+  padding:15px 15px;
+  color:white;
+  text-shadow:1px 1px 4px rgb(255,221,226);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin: 8px;
+  border-bottom: 2px solid lightpink;
+  height:40px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button{
+  font-size:16px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+.button-sale{
+  font-size:16px;
+  color:red;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid red;
+  background-color: white;
+}
+.button-gift{
+  font-size:16px;
+  width: 150px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+.button-sale:hover{
+  background-color: rgb(241, 25, 144);
+  color:white;
+  font-weight: bold;
+}
+.button-gift:hover{
+  box-shadow:10px 10px 10px rgb(241, 25, 144);
+}
+.button:hover{
+  background-color: rgb(241, 25, 144);
+  color:white;
+}
