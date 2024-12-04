@@ -17,7 +17,7 @@ body{
   height:370px;
   position:relative;
   max-width: 400px; 
-  padding: 20px; 
+  padding: 25px; 
   background: rgba(255,255,255,0.1);
   box-shadow: 0 4px 5px rgba(0,0,0,0.1);
   border-radius:10px;
@@ -38,8 +38,8 @@ body{
   color:purple;
 }
 h2{
-  color: #000000;
-  margin-top: 25px;
+  color: rgba(16, 16, 16, 0.848);
+  margin-top: 23px;
   margin-bottom: -20px;
   font-size:30x;
 }
@@ -55,7 +55,7 @@ input{
   border:none;
   border-radius: 10px;
   background: transparent;
-  border:1px solid #885c5c;;
+  border:1px solid #885c5c;
   color: #000000;
   font-size:14px;
 }
