@@ -1,4 +1,5 @@
 body{
+ background-color: #FFDDE2;
   margin:0;
   padding:0;
   box-sizing: border-box;
@@ -19,8 +20,9 @@ p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .text a{
-  text-decoration: none;
-  color:inherit;
+  text-decoration: underline;
+  color:red;
+  
 }
 .text a:hover{
   text-decoration: underline;
@@ -28,7 +30,7 @@ p{
 .logo{
   height:75px;
   display: flex;
-  background-color: rgb(241,25,144);
+  background-color: #FF8BA0;
   text-align:center;
   justify-content: center;
 }
@@ -61,12 +63,12 @@ p{
 }
 .button-sale{
   font-size:16px;
-  color:red;
+  color:pink;
   width: 105px;
   height:30px;
   border-radius:15px; 
   border: 2px solid red;
-  background-color: white;
+  background-color: red;
 }
 .button-gift{
   font-size:16px;
@@ -77,14 +79,11 @@ p{
   background-color: white;
 }
 .button-sale:hover{
-  background-color: rgb(241, 25, 144);
-  color:white;
-  font-weight: bold;
+  box-shadow:10px 10px 10px #FF7084;
 }
 .button-gift:hover{
-  box-shadow:10px 10px 10px rgb(241, 25, 144);
+  box-shadow:10px 10px 10px#FF7084;
 }
 .button:hover{
-  background-color: rgb(241, 25, 144);
-  color:white;
+  box-shadow:10px 10px 10px #FF7084;
 }

@@ -100,9 +100,9 @@ input:focus{
   outline:1px solid #0e0d0d;
 }
 .submit{
-
+font-size: 20px;
   margin:18px;
-  padding:15px;
+  padding:11px;
   background: transparent;
   border:1px solid #885c5c;
   border-radius:15px;
@@ -119,4 +119,7 @@ p{
   font-size:14px;
   color:#000000;
   margin-top: 13px;
+}
+.remfor{
+font-size: 12px;
 }

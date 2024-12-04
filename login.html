@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script/validation.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In | Bliss</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
   <div class="log-in-container">
     <div class="log-in">
       <h2>Log In</h2>
 
-      <form action="#" method="POST"> 
+      <form action="#" method="POST" name="login" onsubmit="return validateForm()"> 
 
-        <input type="text" class="username" name="username" placeholder="Username">
-        <input type="password" class="password" name="password" placeholder="Password">
+        <input type="text" class="username" name="username" id="username" placeholder="Username">
+        <input type="password" class="password" name="password" id="password" placeholder="Password">
 
         <div class="check">
           <input type="checkbox" class="checkbox" name="remember">
-          <label for="remember">Remember me?</label>
-          <a href="#">Forgot password?</a>
+          <label class="remfor" for="remember">Remember me?</label>
+          <a class="remfor" href="#">Forgot password?</a>
         </div>
 
-        <button class="submit">Log in</button>
+        <button class="submit" onclick="validateForm()">Log in</button>
 
         <p class="sign-up">Don't have an account? <a href="#" id="sign-up">Sign up.</a></p>
       </form>
