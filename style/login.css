@@ -30,7 +30,7 @@ body{
 }
 .sign-up a{
   color:inherit;
-  text-decoration: none;
+  
 }
 
 .sign-up a:hover{
@@ -123,3 +123,5 @@ p{
 .remfor{
 font-size: 12px;
 }
+
+
