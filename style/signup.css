@@ -1,14 +1,14 @@
 *{
   margin: 0;
   box-sizing: border-box;
-  font-family:sans-serif
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
   margin:0;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content:center;
+  align-content: flex-end;
   background-image:url('https://i.pinimg.com/736x/a3/35/d3/a335d3fce85f5995fe96706dcfba9836.jpg');
 
 
@@ -17,8 +17,8 @@ body{
 .sign-up-container{
   margin-right: 0;
   margin-top:80px;
-  width:350px;
-  height:590px;
+  width:380px;
+  height:550px;
   position: absolute;
   max-width: 480px;
   padding:25px;
@@ -33,7 +33,7 @@ body{
 }
 
 h2{
-  color:rgba(16, 16, 16, 0.848);
+  color:rgba(0, 0, 0, 0.848);
   margin-top:20px;
   margin-bottom:10px;
   font-size:21px;
@@ -44,7 +44,7 @@ form{
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
-  margin-top:15px;
+  margin-top:13px;
   justify-content: center;
   gap:5px;
   margin-bottom: 100px;
@@ -56,7 +56,7 @@ input{
   padding:12px;
   margin-top: 22px;
   border:none;
-  border-radius:10px;
+  border-radius:0px;
   background: transparent;
   border:1px solid #885c5c;
   color:#000000;
@@ -104,15 +104,8 @@ p{
 
 }
 
-.shipping{
-  font-size:14px;
-  margin-bottom: 10px;
 
-}
 
-.shipping:hover{
-  text-decoration: underline;
-}
   
 
 /*

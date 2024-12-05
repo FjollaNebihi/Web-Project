@@ -6,9 +6,12 @@ body{
 }
 
 p{
-  margin:0;
+  margin:0px;
 }
-
+.text{
+  margin-top:15px;
+  
+}
 .header{
   justify-content:center;
   height:50px;
@@ -18,13 +21,16 @@ p{
   text-align:center;
   font-size:17px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
 .text a{
-  text-decoration: underline;
-  color:red;
+  text-decoration: none;
+  color:inherit;
+  margin-bottom: 15px;
   
 }
 .text a:hover{
+  color:purple;
   text-decoration: underline;
 }
 .logo{
@@ -87,3 +93,22 @@ p{
 .button:hover{
   box-shadow:10px 10px 10px #FF7084;
 }
+
+.account{
+  display: flex;
+  justify-content: right;
+  margin-top:-30px;
+  margin-right: 20px;
+  gap:10px;
+}
+
+.sign-up,.log-in{
+  border-radius: 15px;
+  background-color: white;
+  color:black;
+  height:30px;
+  width:130px;
+  border:2px solid pink;
+  font-size:15px;
+}
+
