@@ -1,0 +1,120 @@
+body{
+  background-color:#FFDDE2; 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+p{
+  margin:0px;
+}
+
+.text{
+  margin-top:8px;
+}
+
+.header{
+  justify-content:center;
+  height:50px;
+  background-color: rgb(255,221,226);
+  color:black;
+  align-content: center;
+  text-align:center;
+  font-size:17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+.logo{
+  height:75px;
+  display: flex;
+  background-color: #FF8BA0;
+  text-align:center;
+  justify-content: center;
+}
+
+.bliss{
+  font-size:35px;
+  font-family:fantasy;
+  letter-spacing:5px;
+  padding:15px 15px;
+  color:white;
+  text-shadow:1px 1px 4px rgb(255,221,226);
+}
+
+#container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  padding-top:30px;
+}
+#produktet{
+  margin-top:100px;
+  display:flex;
+  align-items:center;
+  height:250px;
+  width:250px;
+  border:1px solid white;
+  margin:5px;
+  font-size:15px;
+  color:pink;
+  background-color: rgb(255, 255, 255);
+}
+
+#button{
+  margin-bottom:215px;
+  margin-left:6px;
+  border-radius:2px;
+  background-color:#FF8BA0 ;
+  color:white;
+  border:1px solid #FF8BA0;
+  width:110px;
+  font-weight: bold;
+  font-size:12px;
+}
+.produkti-1{
+}
+.produkti-2{
+  
+}
+.produkti-3{
+  
+}
+.produkti-4{
+}
+.produkti-5{
+  
+}
+.produkti-6{
+  
+}
+.produkti-7{
+ 
+}
+.produkti-8{
+ 
+}
+.produkti-9{
+  
+}
+.produkti-10{
+  
+}
+.produkti-11{
+ 
+}
+.produkti-12{
+  
+}
+.produkti-13{
+  
+}
+
+.produkti-14{
+  
+}
+.produkti-15{
+}
+
+
