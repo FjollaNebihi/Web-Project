@@ -66,16 +66,36 @@ p{
 }
 
 #button{
-  margin-bottom:215px;
+  margin-bottom:265px;
   margin-left:6px;
   border-radius:2px;
-  background-color:#FF8BA0 ;
+  height:20px;
+  width:150px;
+  background-color: #FF8BA0;
   color:white;
   border:1px solid #FF8BA0;
   width:110px;
   font-weight: bold;
   font-size:12px;
   position: absolute;
+}
+
+#button-2{
+  margin-bottom:255px;
+  margin-left:190px;
+  border-radius:10px;
+  height:30px;
+  width:150px;
+  background-color:#ffffff;
+  border:1px solid #FF8BA0;
+  width:100px;
+  font-weight: bold;
+  font-size:12px;
+  position: absolute;
+  color:#FF8BA0;
+}
+#button-2:hover{
+  box-shadow:6px 6px 6px  #FF7084;
 }
 .button-sale:hover{
   box-shadow:10px 10px 10px #FF7084;
@@ -147,9 +167,20 @@ p{
   position:absolute;
   color:black;
   font-size:15px;
-  margin-top:200px;
-  margin-left:10px;
+  margin-top:220px;
+  margin-left:4px;
   font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cmimi{
+  position:absolute;
+  color:black;
+  font-size:15px;
+  margin-top:280px;
+  margin-left:10px;
+  margin-right:1350px;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .container-2{
   display: flex;
