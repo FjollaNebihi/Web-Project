@@ -228,5 +228,35 @@ p{
   background-color:#FF8BA0;
 
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
 
+  .content {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.footer-links {
+  margin-bottom: 20px;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
