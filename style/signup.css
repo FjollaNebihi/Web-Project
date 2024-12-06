@@ -15,6 +15,7 @@ body{
 }
 
 .sign-up-container{
+  position:absolute;
   margin-right: 0;
   margin-top:80px;
   width:380px;
@@ -26,6 +27,7 @@ body{
   box-shadow: 0 4px 5px rgba(0,0,0,0.1);
   border-radius: 10px;
   border:1px solid #885c5c;
+  gap:6px;
 }
 .sign-up{
   max-width:250px;
@@ -54,7 +56,7 @@ input{
   width:400px;
   height:40px;
   padding:12px;
-  margin-top: 22px;
+  margin-top: 19px;
   border:none;
   border-radius:0px;
   background: transparent;
@@ -75,6 +77,8 @@ input:focus{
 .submit{
   font-size:20px;
   margin:20px;
+  margin-right:50px;
+  margin-left:50px;
   padding:11px;
   background: transparent;
   border:1px solid #885c5c;
@@ -82,6 +86,7 @@ input:focus{
   font-size:15px;
   margin-bottom: 10px;
   flex: 1 1 calc(50% - 10px);
+  width:150px;
 }
 .submit:hover{
   opacity: 0.2;
@@ -104,7 +109,45 @@ p{
 
 }
 
+#error1{
+  font-size:12px;
+  color:red;
+  margin-bottom:-20px;
+  margin-right:86px;
+  margin-left:-10px;
 
+}
+
+#error2{
+  color:red;
+  font-size:12px;
+  margin-bottom:-20px;
+  margin-right:86px;
+  margin-left:-7px;
+}
+#error3{
+  color:red;
+  font-size:12px;
+  margin-bottom:-20px;
+  margin-right:86px;
+  margin-left:-12px;
+
+}
+#error4{
+  color:red;
+  font-size:12px;
+  margin-bottom:-20px;
+  margin-right:63px;
+  margin-left:px;
+}
+
+#error5{
+  color:red;
+  font-size:12px;
+  margin-bottom:-20px;
+  margin-right:10px;
+
+}
 
   
 
