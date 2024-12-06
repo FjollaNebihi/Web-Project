@@ -117,4 +117,51 @@ p{
 .produkti-15{
 }
 
+.container-2{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin: 8px;
+  border-bottom: 2px solid lightpink;
+  height:40px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button{
+  font-size:16px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+.button-sale{
+  font-size:16px;
+  color:pink;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid red;
+  background-color: red;
+}
+.button-gift{
+  font-size:16px;
+  width: 150px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+
+.button-1{
+  font-size:16px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color:#FF8BA0;
+
+}
+
 
