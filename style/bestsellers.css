@@ -47,15 +47,18 @@ p{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:space-evenly;
-  padding-top:30px;
+  padding-top:20px;
+
 }
 #produktet{
-  margin-top:100px;
+  border:1px solid #FF8BA0;
+  border-radius:9px;
+  margin-top:60px;
   display:flex;
   align-items:center;
   height:250px;
   width:250px;
-  border:1px solid white;
+  
   margin:5px;
   font-size:15px;
   color:pink;
@@ -72,51 +75,59 @@ p{
   width:110px;
   font-weight: bold;
   font-size:12px;
+  position: absolute;
 }
-.produkti-1{
+.button-sale:hover{
+  box-shadow:10px 10px 10px #FF7084;
 }
-.produkti-2{
-  
+.button-gift:hover{
+  box-shadow:10px 10px 10px#FF7084;
 }
-.produkti-3{
-  
+.button:hover{
+  box-shadow:10px 10px 10px #FF7084;
 }
-.produkti-4{
+.button-1:hover{
+  box-shadow:10px 10px 10px #FF7084;
+
 }
-.produkti-5{
-  
-}
-.produkti-6{
-  
-}
-.produkti-7{
- 
-}
-.produkti-8{
- 
-}
-.produkti-9{
-  
-}
-.produkti-10{
-  
-}
-.produkti-11{
- 
-}
-.produkti-12{
-  
-}
-.produkti-13{
+.small-image{
+  width:200px;
+  height:auto;
+  margin-top:10px;
+  margin-bottom:50px;
+  margin-right:50px;
   
 }
 
-.produkti-14{
+.small-image2{
+  width:160px;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-left:50px;
   
+
 }
-.produkti-15{
+.small-image3{
+  width:150px;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-left:50px;
+
+}
+.small-image4{
+  width:140px;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-left:50px;
+
 }
 
+#text{
+  position:absolute;
+}
 .container-2{
   display: flex;
   justify-content: center;
