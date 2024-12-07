@@ -93,7 +93,6 @@ p{
   background-color:#FF8BA0;
 
 }
-
 #container{
   display:flex;
   flex-direction: row;
@@ -231,7 +230,7 @@ p{
   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-/*
+
 .container-2{
   display: flex;
   justify-content: center;
