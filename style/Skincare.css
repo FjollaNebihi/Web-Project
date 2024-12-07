@@ -213,7 +213,7 @@ text-decoration: underline;
 
 #skincare{
   margin-top:20px;
-  height:350px;
+  height:220px;
   width:auto;
   background-color: white;
   border:2px solid lightpink;
@@ -223,17 +223,51 @@ text-decoration: underline;
 .ordinary{
   margin-top:0px;
   width:auto;
-  height:330px;
+  height:200px;
   margin-left:900px;
   margin-bottom:-70px;
   background: transparent;
 }
 
 .kliko{
-  height:30px;
-  width:320px;
-  margin-left:310px;
+  height:50px;
+  width:300px;
+  margin-bottom:30px;
+  margin-left:400px;
   border-radius:10px;
   border:1px solid #393939;
-  margin-top:-20px;
+  margin-top:-10px;
+  background-color: #FFDDE2; 
+  color:#393939;
+  border:1px solid #ff8ca4;
+  font-size:14px;
+  text-decoration: dotted;
+
+}
+
+.skincare-2{
+  height:600px;
+  width:790px;
+  margin-top:-180px;
+  font-size:18px;
+  color:#393939;
+  padding:5px;
+  font-style: italic;
+
+}
+.teksti{
+  margin-left:400px;
+  color:#393939;
+  text-shadow:1px 1px 1px lightpink;
+
+
+}
+
+
+.app{
+  padding:30px;
+  margin-left:370px;
+  color:#393939;
+  text-decoration: underline;
+
 }
