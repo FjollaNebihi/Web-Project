@@ -61,7 +61,7 @@ p{
   padding-bottom: 10px;
 }
 .button{
-  font-size:16px;
+  font-size:14px;
   width: 105px;
   height:30px;
   border-radius:15px; 
@@ -69,7 +69,7 @@ p{
   background-color: white;
 }
 .button-sale{
-  font-size:16px;
+  font-size:14px;
   color:red;
   width: 105px;
   height:30px;
@@ -78,13 +78,22 @@ p{
   background-color: white;
 }
 .button-gift{
-  font-size:16px;
+  font-size:14px;
   width: 150px;
   height:30px;
   border-radius:15px; 
   border: 2px solid pink;
   background-color: white;
 }
+.button-1{
+  font-size:14px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color:white;
+}
+
 .button-sale:hover{
   box-shadow:10px 10px 10px #FF7084;
 }

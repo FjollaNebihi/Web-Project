@@ -1,4 +1,27 @@
+body{
+  background-color:#FFDDE2; 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+p{
+  margin:0px;
+}
 
+.text{
+  padding-top:10px;
+  margin-top:8px;
+  margin-bottom: 20px;
+}
+
+#update{
+  display:flex;
+  flex-direction: row;
+  gap :3px;
+  justify-content: center;
+  
+
+}
     *{
       margin: 0px;
       padding: 0px;
@@ -33,17 +56,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
-    .slider-container{
-      width: 100px;
-      height: 100vh;
-      background-color: #FFDDE2;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+
 
     .header{
       justify-content:center;
@@ -86,7 +99,7 @@
       padding-bottom: 10px;
     
     }
- 
+  
     button{
       font-size:14px;
       width: 105px;
@@ -115,7 +128,7 @@
       background-color: white;
     }
     #button-brands{
-      background-color:#FF8BA0;
+      background-color:white;
 
     }
     .button-1{
@@ -144,81 +157,60 @@
       box-shadow:10px 10px 10px #FF7084;
     
     }
+  
  
-.email{
-  height:35px;
-  width:250px;
-  border-radius:8px;
-  border:1px solid #393939;
-  margin-left:-50px;
-}
-input{
-  color:#393939;
-  padding-left:5px;
-  width: 90%;
-}
-
-.submit{
-  height:35px;
-  width:120px;
-  border-radius:8px;
-  color:#393939;
-  border:1px solid #393939;
-  background-color: white;
-  font-size:15px;
-}
-
-.terms{
-  margin-left:-47px;
-  margin-top:10px;
-  font-size:14px;
-  font-family:;
-  color:#393939;
-  letter-spacing: 1px;
-  margin-bottom:7px;
-}
-
-.signsign{
-  padding: 0;
-  margin-bottom:20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.submit{
-  transition: 0.5s;
-  width: 70px;
-
-  margin-left: 0;
-}
-.submit:hover{
-  background-color: pink;
-  border-color: red;
-  border-radius: 5px;
-  color: white;
-  transition: 0.5s;
-}
-
-#update{
-  padding: auto;
-}
-  .footer {
-      background-color: #ff8ca4;
-      color: white;
-      text-align: center;
-      padding: 10px;
+    .slider-container {
+      margin-top: 320px;
       width: 100%;
-  }
-  .footer-links {
-    margin-bottom: 20px;
-  }
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  .footer-link:hover {
-    text-decoration: underline;
-  }
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFDDE2; /* E njëjtë me ngjyrën ekzistuese */
+      padding: -70px 0;
+    }
+    
+    .slider-images {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px 0;
+      scroll-behavior: smooth;
+    }
+    
+    .slider-images img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    
+    .slider-images img:hover {
+      transform: scale(1.1); 
+    }
+    
+    .slider-img-text {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    
+    .slider-img-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  
+
+
+
+
+
 
 
 
