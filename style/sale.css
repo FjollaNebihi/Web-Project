@@ -74,7 +74,7 @@
     border-radius:2px;
     height:20px;
     width:150px;
-    background-color: #FF8BA0;
+    background-color: red;
     color:white;
     border:1px solid #FF8BA0;
     width:110px;
@@ -123,7 +123,8 @@
   }
   img{
   width: 170px;
-  height: 160px;
+  height: 180px;
+  margin-left:60px;
   }
 
   .small-image2{

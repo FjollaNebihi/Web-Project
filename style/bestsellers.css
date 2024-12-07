@@ -50,7 +50,9 @@ p{
   flex-wrap: wrap;
   justify-content:space-evenly;
   padding-top:20px;
-
+img{
+  margin-left:80px;
+}
 }
 #produktet{
   border:1px solid #FF8BA0;
@@ -262,3 +264,4 @@ body {
 .footer-link:hover {
   text-decoration: underline;
 }
+
