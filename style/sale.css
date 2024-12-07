@@ -263,10 +263,10 @@
   
   /*sign up-i*/
 .sign{
-  margin-left:-47px;
+  margin-left:0px;
   margin-top:20px;
   font-size:20px;
-  font-family:;
+  
   color:#393939;
   letter-spacing: 1.5px;
   margin-bottom:10px;
@@ -277,7 +277,7 @@
 #update{
   display:flex;
   flex-direction: row;
-  gap:20px;
+  gap :3px;
   justify-content: center;
   
 
@@ -285,7 +285,7 @@
 
 .email{
   height:35px;
-  width:400px;
+  width:250px;
   border-radius:8px;
   border:1px solid #393939;
   margin-left:-50px;
@@ -293,6 +293,7 @@
 input{
   color:#393939;
   padding-left:5px;
+  width: 90%;
 }
 
 .submit{
@@ -316,11 +317,28 @@ input{
 }
 
 .signsign{
+  padding: 0;
   margin-bottom:20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.submit{
+  transition: 0.5s;
+  width: 70px;
 
+  margin-left: 0;
+}
+.submit:hover{
+  background-color: pink;
+  border-color: red;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+}
+
+#update{
+  padding: auto;
+}
   .footer {
       background-color: #ff8ca4;
       color: white;
