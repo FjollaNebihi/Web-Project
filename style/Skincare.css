@@ -210,3 +210,30 @@ margin: 0 10px;
 .footer-link:hover {
 text-decoration: underline;
 }
+
+#skincare{
+  margin-top:20px;
+  height:350px;
+  width:auto;
+  background-color: white;
+  border:2px solid lightpink;
+}
+
+
+.ordinary{
+  margin-top:0px;
+  width:auto;
+  height:330px;
+  margin-left:900px;
+  margin-bottom:-70px;
+  background: transparent;
+}
+
+.kliko{
+  height:30px;
+  width:320px;
+  margin-left:310px;
+  border-radius:10px;
+  border:1px solid #393939;
+  margin-top:-20px;
+}
