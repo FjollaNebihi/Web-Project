@@ -13,8 +13,8 @@ body{
 }
 .log-in-container{
   margin-top:150px;
-  width:320px;
-  height:370px;
+  width:360px;
+  height:400px;
   position:relative;
   max-width: 400px; 
   padding: 25px; 
@@ -24,7 +24,7 @@ body{
   border:1px solid #885c5c;
 }
 .log-in{
-  max-width:250px;
+  max-width:270px;
   margin:0 auto;
   text-align: center;
 }
@@ -74,7 +74,7 @@ input:focus{
 }
 
 .check input{
-  margin-right: 5px;
+  margin-right: 10px;
   margin-top: 0px;
 }
 
@@ -123,5 +123,23 @@ p{
 .remfor{
 font-size: 12px;
 }
+
+
+#error1 {
+  color: red; 
+  font-size: 12px; 
+  margin-top: 5px;
+  margin-left: -19px;
+  margin-right: 86px;
+}
+#error2 {
+  color: red; 
+  font-size: 12px; 
+  margin-top: 5px;
+  margin-left: -3px;
+  margin-right: 83px;
+}
+
+
 
 
