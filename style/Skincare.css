@@ -58,7 +58,7 @@ p{
 
 }
 .button{
-  font-size:14px;
+  font-size:16px;
   width: 105px;
   height:30px;
   border-radius:15px; 
@@ -69,7 +69,7 @@ p{
   background-color:#FF8BA0;
 }
 .button-sale{
-  font-size:14px;
+  font-size:16px;
   color:red;
   width: 105px;
   height:30px;
@@ -78,7 +78,30 @@ p{
   border:2px solid red;
   background-color: white;
 }
+#text{
+  position:absolute;
+  color:black;
+  font-size:15px;
+  margin-top:220px;
+  margin-left:4px;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+#cmimi{
+  position:absolute;
+  color:black;
+  font-size:15px;
+  margin-top:260px;
+  margin-left:5px;
+  margin-right:1350px;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+img{
+  width:160px;
+  height:220px;
+  margin-left:60px;
+}
 
 .button-gift{
   font-size:14px;
