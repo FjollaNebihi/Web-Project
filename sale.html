@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src=""></script>
+    <script src="script/signup-validation1.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,17 +113,16 @@
             <p id="cmimi">$23.60</p>
             </div>
             
-          
-
-              
 
             <footer class="footer">
                 <div class="signsign">
                     <p class="sign">Sign Up For Updates</p>
                     <div id="update">
                       
-                      <input type="text" id="input" class="email" placeholder="E-mail Address">
-                      <button class="submit">Submit</button>
+                      <input type="text" id="input" class="email" name="email" placeholder="E-mail Address">
+                      <button class="submit" onclick="SignUp()">Submit</button>
+                      
+                      <div id="error1"> </div>
                       </div>
                     <p class="terms">by signing up you agree to our <a href> terms.</a></p>
                   </div>

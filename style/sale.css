@@ -61,7 +61,7 @@
     align-items:center;
     height:300px;
     width:300px;
-    
+    position: relative;
     margin:5px;
     font-size:15px;
     color:pink;
@@ -79,7 +79,7 @@
     border:1px solid #FF8BA0;
     width:110px;
     font-weight: bold;
-    font-size:14px;
+    font-size:12px;
     position: absolute;
   }
   
@@ -93,7 +93,7 @@
     border:1px solid #FF8BA0;
     width:100px;
     font-weight: bold;
-    font-size:14px;
+    font-size:12px;
     position: absolute;
     color:#FF8BA0;
   }
@@ -128,7 +128,7 @@
   }
 
   .small-image2{
-    width:250px;
+    width:200px;
     height:auto;
     margin-top:10px;
     margin-bottom:50px;
@@ -145,7 +145,7 @@
   
   }
   .small-image4{
-    width:250px;
+    width:210px;
     height:auto;
     margin-top:10px;
     margin-bottom:50px;
@@ -212,7 +212,7 @@
     padding-bottom: 15px;
   }
   .button{
-    font-size:16px;
+    font-size:14px;
     width: 105px;
     height:30px;
     border-radius:15px; 
@@ -220,7 +220,7 @@
     background-color: white;
   }
   .button-sale{
-    font-size:16px;
+    font-size:14px;
     color:red;
     width: 105px;
     height:30px;
@@ -229,7 +229,7 @@
     background-color: white;
   }
   .button-gift{
-    font-size:16px;
+    font-size:14px;
     width: 150px;
     height:30px;
     border-radius:15px; 
@@ -238,15 +238,14 @@
   }
   
   .button-1{
-    background-color: white;
-    font-size:16px;
+    font-size:14px;
     width: 105px;
     height:30px;
     border-radius:15px; 
     border: 2px solid pink;
-
-  
+    background-color:white;
   }
+
   html, body {
     height: 100%;
     margin: 0;
@@ -261,7 +260,6 @@
       flex-grow: 1;
   }
   
-  /*sign up-i*/
 .sign{
   margin-left:0px;
   margin-top:20px;
@@ -357,7 +355,13 @@ input{
   .footer-link:hover {
     text-decoration: underline;
   }
-
+  #error1 {
+    color: red; 
+    font-size: 13px; 
+    margin-top: 5px;
+    margin-left: -80px;
+    margin-right: 90px;
+  }
 
 
  
