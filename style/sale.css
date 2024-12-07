@@ -12,6 +12,8 @@
   
   .text{
     margin-top:8px;
+    padding-top:10px;
+    margin-bottom: 20px;
   }
   
   .header{
@@ -205,8 +207,8 @@
     border-bottom: 2px solid lightpink;
     height:40px;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .button{
     font-size:16px;
@@ -235,6 +237,7 @@
   }
   
   .button-1{
+    background-color: white;
     font-size:16px;
     width: 105px;
     height:30px;
@@ -252,7 +255,7 @@
   body {
     display: flex;
     flex-direction: column;
-  
+  }
     .content {
       flex-grow: 1;
   }
