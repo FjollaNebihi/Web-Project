@@ -65,16 +65,14 @@ p{
   border: 2px solid pink;
   background-color: white;
 }
-#skin-care-button{
-  background-color:#FF8BA0;
+
 }
 .button-sale{
   font-size:14px;
   color:red;
   width: 105px;
   height:30px;
-  border-radius:15px; 
-
+  border-radius:15px;
   border:2px solid red;
   background-color: white;
 }
@@ -94,7 +92,7 @@ p{
   height:30px;
   border-radius:15px; 
   border: 2px solid pink;
-  
+  background-color: white;
 
 }
 .button-sale:hover{

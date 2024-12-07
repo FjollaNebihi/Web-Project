@@ -230,7 +230,7 @@ p{
   height:30px;
   border-radius:15px; 
   border: 2px solid pink;
-  background-color:#FF8BA0;
+  background-color:white;
 
 }
 html, body {
@@ -341,7 +341,13 @@ input{
   .footer-link:hover {
     text-decoration: underline;
   }
-
+  #error1 {
+    color: red; 
+    font-size: 13px; 
+    margin-top: 5px;
+    margin-left: -80px;
+    margin-right: 90px;
+  }
 
 
  
