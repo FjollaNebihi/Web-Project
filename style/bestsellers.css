@@ -50,9 +50,6 @@ p{
   flex-wrap: wrap;
   justify-content:space-evenly;
   padding-top:20px;
-img{
-  margin-left:80px;
-}
 }
 #produktet{
   border:1px solid #FF8BA0;
@@ -62,12 +59,14 @@ img{
   align-items:center;
   height:300px;
   width:300px;
-  
+  position: relative;
   margin:5px;
   font-size:15px;
   color:pink;
   background-color: rgb(255, 255, 255);
 }
+
+
 
 #button{
   margin-bottom:265px;
@@ -207,13 +206,15 @@ img{
 }
 .button-sale{
   font-size:16px;
-  color:pink;
+  color:red;
   width: 105px;
   height:30px;
   border-radius:15px; 
   border: 2px solid red;
-  background-color: red;
+  background-color: white;
 }
+
+
 .button-gift{
   font-size:16px;
   width: 150px;
