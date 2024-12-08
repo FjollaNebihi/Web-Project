@@ -98,58 +98,7 @@ p{
   box-shadow:10px 10px 10px #FF7084;
 
 }
-.small-image{
-  width:230px;
-  height:auto;
-  margin-top:10px;
-  margin-bottom:50px;
-  margin-right:40px;
-  
-}
 
-.small-image2{
-  width:190px;
-  height:auto;
-  margin-top:20px;
-  margin-bottom:50px;
-  margin-left:70px;
-  
-
-}
-.small-image3{
-  width:170px;
-  height:auto;
-  margin-top:20px;
-  margin-bottom:50px;
-  margin-left:50px;
-
-}
-.small-image4{
-  width:170px;
-  height:auto;
-  margin-top:20px;
-  margin-bottom:50px;
-  margin-left:50px;
-
-}
-.small-image5{
-  width:200px;
-  height:auto;
-  margin-top:10px;
-  margin-bottom:50px;
-  margin-right:34px;
-  margin-left:50px;
-
-}
-
-.small-image6{
-  width:170px;
-  height:auto;
-  margin-top:10px;
-  margin-bottom:50px;
-  margin-right:30px;
-  margin-left:55px;
-}
 
 #text{
   position:absolute;
@@ -270,7 +219,50 @@ body {
   text-decoration: underline;
 }
 
-  
+.gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  align-items:center; 
+  max-width: 1200px; 
+  margin-top:60px; 
+  position: relative;
+  background-color: #FFDDE2;
+  border-radius: 10px;
+  margin:5px;
+}
+
+.photo {
+  flex: 0 0 20%; 
+  max-width: 45%; 
+  background-color: #FFDDE2;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+
+.photo img {
+  width: 100%; 
+  height:auto; 
+  border-radius: 10px;
+  width: 230x;
+  height: 230px;
+}
+
+/* Efekt kur kalon miu mbi foto */
+.photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
   
  
   
