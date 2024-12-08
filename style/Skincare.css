@@ -222,6 +222,7 @@ img{
 }
 
 .kliko{
+  box-shadow: 7px 7px 7px #393939;
   height:50px;
   width:300px;
   margin-bottom:30px;
@@ -232,8 +233,8 @@ img{
   background-color: #FFDDE2; 
   color:#393939;
   border:1px solid #ff8ca4;
-  font-size:14px;
-  text-decoration: dotted;
+  font-size:16px;
+  font-style: italic;
 
 }
 

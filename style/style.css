@@ -189,7 +189,9 @@ display: inline-block;
     margin: 10px;
     transition: background-color 0.3s ease;
 }
-
+.terms a{
+  color:inherit;
+}
 .btn{
   font-size:12px;
   color:white;
@@ -218,7 +220,6 @@ display: inline-block;
   background-color:#ff8ca4; 
   text-decoration: underline;
 }
-
 
 
 .footer {
