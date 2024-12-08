@@ -2,15 +2,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-image: url('https://cdn.wallpapersafari.com/97/84/cCPFMg.jpg');
-  background-size:auto; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position:right; /* Centers the image */
-  height: 50vh; /* Sets the height to the full viewport height */
+  background-size:auto; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  height: 50vh; 
 }
 
-/* Add styling for the content */
 .content {
-  color: white; /* Makes the text more visible against dark backgrounds */
+  color: white; 
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -171,6 +170,45 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-container {
+  margin-top: 20px;
+}
+#button-1{
+display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn{
+  font-size:13px;
+  color:white;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border:2px solid red;
+  background-color: red;
+}
+}
+.btn:hover{
+  background-color: darkred;
+}
+
+.button-1{
+  font-size:13px;
+  width: 150px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+
+.button-1:hover {
+  background-color:#ff8ca4; 
 }
 
 .sign{
