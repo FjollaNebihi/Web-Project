@@ -117,6 +117,7 @@ p{
   border-radius:15px; 
   border:2px solid red;
   background-color: white;
+  
 }
 
 
@@ -129,15 +130,15 @@ p{
   background-color: white;
 }
 
-.button-1{
+.button-2{
   font-size:14px;
   width: 105px;
   height:30px;
   border-radius:15px; 
   border: 2px solid pink;
   background-color:white;
-
 }
+
 .container-2{
   display: flex;
   justify-content: center;
@@ -149,6 +150,7 @@ p{
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .button{
   font-size:14px;
   width: 105px;
@@ -156,7 +158,9 @@ p{
   border-radius:15px; 
   border: 2px solid pink;
   background-color: white;
+  
 }
+
 .button-sale{
   font-size:14px;
   color:red;
@@ -179,13 +183,14 @@ p{
 
 .button-1{
   font-size:14px;
-  width: 105px;
+  width: 115px;
   height:30px;
   border-radius:15px; 
   border: 2px solid pink;
   background-color:white;
-
+  box-shadow:10px 10px 10px #FF7084;
 }
+
 html, body {
   height: 100%;
   margin: 0;
