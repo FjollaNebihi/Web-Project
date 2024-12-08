@@ -2,14 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #FFDDE2; /* Ngjyra kryesore e faqes */
+  background-color: #FFDDE2; 
   background-image: url('https://cstoredecisions.com/wp-content/uploads/2022/01/Makeup_Adobestock.jpg'); /* Vendos foton si background */
-  background-size: auto 100%; /* Siguron që fotoja mbulon të gjithë sfondin */
-  background-position:right center; /* Qendra e fotos shfaqet në mes të faqes */
-  background-blend-mode:darken; /* Kombinon ngjyrën dhe foton */
+  background-size: auto 100%; 
+  background-position:right center; 
+  background-blend-mode: darken;
   background-repeat: no-repeat;
 }
-
 
 
 .content {
@@ -132,13 +131,15 @@ p{
 
 
 .sign-up,.log-in{
+  margin-bottom: 4px;
+  margin-top:6px;
   border-radius: 15px;
   background-color: white;
   color:black;
   height:30px;
-  width:130px;
+  width:115px;
   border:2px solid pink;
-  font-size:15px;
+  font-size:13px;
 }
 
 html, body {
@@ -192,6 +193,35 @@ display: inline-block;
 .terms a{
   color:inherit;
 }
+
+
+.welcome-container{
+  text-align: left;
+  font-family:"Cinzel", serif;
+}
+
+.welcome-container h3 {
+  font-size: 22px;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.welcome-container h1 {
+  font-size: 2em; 
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 19px;
+  text-align: left;
+  color: #4F4F4F;
+  font-style:normal;
+  margin-top: 0; 
+  margin-bottom: 0;
+}
+
+
 .btn{
   font-size:12px;
   color:white;
@@ -200,6 +230,7 @@ display: inline-block;
   border-radius:15px; 
   border:2px solid red;
   background-color: red;
+  margin-bottom: 100px;
 }
 
 .btn:hover{
