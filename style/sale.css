@@ -268,7 +268,7 @@
   }
   
 .sign{
-  margin-left:0px;
+  margin-left:-47px;
   margin-top:20px;
   font-size:20px;
   
@@ -276,6 +276,7 @@
   letter-spacing: 1.5px;
   margin-bottom:10px;
   font-weight: bold;
+  
 
 
 }
