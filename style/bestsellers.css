@@ -272,9 +272,53 @@ body {
 }
 
 
+
+  .footer {
+      background-color: #ff8ca4;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+  }
+  .footer-links {
+
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+/*sign up-i*/
+.sign{
+  margin-left:460px;
+  margin-top:110px;
+  font-size:20px;
+  font-family:;
+  color:#393939;
+  letter-spacing: 1.5px;
+  margin-bottom:10px;
+  font-weight: bold;
+}
+
+#update{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: center;
+
+}
+.terms a{
+  color:inherit;
+}
+
 .email{
   height:35px;
-  width:250px;
+  width:400px;
   border-radius:8px;
   border:1px solid #393939;
   margin-left:-50px;
@@ -282,7 +326,6 @@ body {
 input{
   color:#393939;
   padding-left:5px;
-  width: 90%;
 }
 
 .submit{
@@ -296,7 +339,7 @@ input{
 }
 
 .terms{
-  margin-left:-47px;
+  margin-left:460px;
   margin-top:10px;
   font-size:14px;
   font-family:;
@@ -306,53 +349,9 @@ input{
 }
 
 .signsign{
-  padding: 0;
   margin-bottom:20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.submit{
-  transition: 0.5s;
-  width: 70px;
-
-  margin-left: 0;
-}
-.submit:hover{
-  background-color: pink;
-  border-color: red;
-  border-radius: 5px;
-  color: white;
-  transition: 0.5s;
-}
-
-#update{
-  padding: auto;
-}
-  .footer {
-      background-color: #ff8ca4;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      width: 100%;
-  }
-  .footer-links {
-    margin-bottom: 20px;
-  }
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  .footer-link:hover {
-    text-decoration: underline;
-  }
-  #error1 {
-    color: red; 
-    font-size: 13px; 
-    margin-top: 5px;
-    margin-left: -80px;
-    margin-right: 90px;
-  }
 
 
  

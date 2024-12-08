@@ -198,7 +198,9 @@ display: inline-block;
     margin: 10px;
     transition: background-color 0.3s ease;
 }
-
+.terms a{
+  color:inherit;
+}
 .btn{
   font-size:13px;
   color:white;
@@ -227,7 +229,7 @@ display: inline-block;
 }
 
 .sign{
-  margin-left:460px;
+  margin-left:465px;
   margin-top:20px;
   font-size:20px;
   color:#393939;
@@ -269,7 +271,7 @@ input{
 }
 
 .terms{
-  margin-left:460px;
+  margin-left:465px;
   margin-top:10px;
   font-size:14px;
   font-family:;
