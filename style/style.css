@@ -1,8 +1,21 @@
-body{
- background-color: #FFDDE2;
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://cdn.wallpapersafari.com/97/84/cCPFMg.jpg');
+  background-size:auto; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position:right; /* Centers the image */
+  height: 50vh; /* Sets the height to the full viewport height */
+}
+
+/* Add styling for the content */
+.content {
+  color: white; /* Makes the text more visible against dark backgrounds */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  display:inline-flexbox;
+  margin: 20px auto;
 }
 
 p{
@@ -112,6 +125,7 @@ p{
   gap:10px;
 }
 
+
 .sign-up,.log-in{
   border-radius: 15px;
   background-color: white;
@@ -135,7 +149,30 @@ body {
   .content {
     flex-grow: 1;
 }
-/*sign up-i*/
+.text-container {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-container h2 {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .sign{
   margin-left:460px;
   margin-top:20px;

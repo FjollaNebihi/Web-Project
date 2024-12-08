@@ -252,13 +252,30 @@ body {
   height: 200px;
 }
 
-/* Efekt kur kalon miu mbi foto */
+
 .photo:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.footer {
+  background-color:#ff8ca4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+.footer-links {
+margin-bottom: 20px;
+}
+.footer-link {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+}
+.footer-link:hover {
+text-decoration: underline;
+}
 
 
 
