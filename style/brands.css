@@ -64,7 +64,7 @@ p{
   border:1px solid #FF8BA0;
   width:110px;
   font-weight: bold;
-  font-size:12px;
+  font-size:14px;
   position: absolute;
 }
 
@@ -78,7 +78,7 @@ p{
   border:1px solid #FF8BA0;
   width:100px;
   font-weight: bold;
-  font-size:12px;
+  font-size:14px;
   position: absolute;
   color:#FF8BA0;
 
@@ -123,7 +123,7 @@ p{
 
 
 .button-gift{
-  font-size:14x;
+  font-size:16x;
   width: 150px;
   height:30px;
   border-radius:15px; 
