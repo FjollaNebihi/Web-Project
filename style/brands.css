@@ -236,7 +236,7 @@ body {
   flex: 0 0 20%; 
   max-width: 45%; 
   background-color: #FFDDE2;
-  border-radius: 10px;
+  border-radius: 9px;
   overflow: hidden;
   text-align: center;
   padding: 20px;
@@ -248,8 +248,8 @@ body {
   width: 100%; 
   height:auto; 
   border-radius: 10px;
-  width: 230x;
-  height: 230px;
+  width: 200x;
+  height: 200px;
 }
 
 /* Efekt kur kalon miu mbi foto */

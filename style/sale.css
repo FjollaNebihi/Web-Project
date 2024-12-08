@@ -66,6 +66,11 @@
     font-size:15px;
     color:pink;
     background-color: rgb(255, 255, 255);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  #produktet:hover{
+    transform: translateY(-5px);
   }
   
   #button{
