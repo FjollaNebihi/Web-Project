@@ -1,3 +1,37 @@
+.text{
+  margin-top:8px;
+  padding-top:10px;
+  margin-bottom: 20px;
+}
+
+.header{
+  justify-content:center;
+  height:50px;
+  background-color:transparent;
+  color:black;
+  align-content: center;
+  text-align:center;
+  font-size:17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+.logo{
+  height:75px;
+  display: flex;
+  background-color: transparent;
+  text-align:center;
+  justify-content: center;
+}
+
+.bliss{
+  font-size:35px;
+  font-family:fantasy;
+  letter-spacing:5px;
+  padding:15px 15px;
+  color:white;
+  text-shadow:1px 1px 4px rgb(255,221,226);
+}
 *{
   margin: 0;
   box-sizing: border-box;
@@ -9,10 +43,11 @@ body{
   display: flex;
   justify-content:center;
   align-content: flex-end;
-  background-image:url('https://i.pinimg.com/736x/a3/35/d3/a335d3fce85f5995fe96706dcfba9836.jpg');
-
-
+  background-image:url('https://e0.pxfuel.com/wallpapers/430/919/desktop-wallpaper-pink-abstract-pink-wave.jpg');
+  background-repeat:no-repeat ;
+  background-size:cover;
 }
+
 
 .sign-up-container{
   position:absolute;
@@ -23,6 +58,7 @@ body{
   position: absolute;
   max-width: 480px;
   padding:25px;
+  background-color: white;
   background: rgba(255,255,255,0.1);
   box-shadow: 0 4px 5px rgba(0,0,0,0.1);
   border-radius: 10px;
@@ -38,8 +74,9 @@ h2{
   color:rgba(0, 0, 0, 0.848);
   margin-top:20px;
   margin-bottom:10px;
-  font-size:21px;
-  letter-spacing: 3px;
+  font-size:20px;
+  letter-spacing: 1px;
+  font-family:'Roboto' sans-serif;
 }
 
 form{
@@ -75,7 +112,7 @@ input:focus{
 
 
 .submit{
-  font-size:20px;
+  font-size:18px;
   margin:20px;
   margin-right:50px;
   margin-left:50px;

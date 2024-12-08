@@ -2,34 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #FFDDE2; /* Ngjyra kryesore e faqes */
+  background-image: url('https://cstoredecisions.com/wp-content/uploads/2022/01/Makeup_Adobestock.jpg'); /* Vendos foton si background */
+  background-size: auto 100%; /* Siguron që fotoja mbulon të gjithë sfondin */
+  background-position:right center; /* Qendra e fotos shfaqet në mes të faqes */
+  background-blend-mode:darken; /* Kombinon ngjyrën dhe foton */
+  background-repeat: no-repeat;
+}
+
+
+
+.content {
   position: relative;
-  overflow: hidden;
-}
-
-
-/* Shtimi i një background image */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://cdn.wallpapersafari.com/97/84/cCPFMg.jpg'); 
-  background-size: cover;
-  background-position: center;
-  z-index: -2; /* Vendoset pas gjithçkaje */
-}
-
-/* Overlay për ngjyrën */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Ndrysho ngjyrën dhe transparencën (RGBA) */
-  z-index: -1; /* Vendoset mbi foton por pas përmbajtjes */
+  z-index: 1; /* Siguron që përmbajtja të jetë mbi sfondin */
+  color: #4F4F4F; /* Ngjyrë për kontrast me sfondin */
+  padding: 0px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 50%;
+  margin: 20px auto;
 }
 
 p{
@@ -200,23 +191,24 @@ display: inline-block;
 }
 
 .btn{
-  font-size:13px;
+  font-size:12px;
   color:white;
-  width: 105px;
-  height:30px;
+  width: 115px;
+  height:32px;
   border-radius:15px; 
   border:2px solid red;
   background-color: red;
 }
-}
+
 .btn:hover{
   background-color: darkred;
+  text-decoration: underline;
 }
 
 .bests{
-  font-size:14px;
-  width: 150px;
-  height:30px;
+  font-size:13px;
+  width: 170px;
+  height:35px;
   border-radius:15px; 
   border: 2px solid pink;
   background-color: white;
@@ -224,64 +216,9 @@ display: inline-block;
 
 .bests:hover {
   background-color:#ff8ca4; 
+  text-decoration: underline;
 }
 
-.sign{
-  margin-left:460px;
-  margin-top:20px;
-  font-size:20px;
-  color:#393939;
-  letter-spacing: 1.5px;
-  margin-bottom:10px;
-  font-weight: bold;
-
-
-}
-#update{
-  display:flex;
-  flex-direction: row;
-  gap:20px;
-  justify-content: center;
-  
-
-}
-
-.email{
-  height:35px;
-  width:400px;
-  border-radius:8px;
-  border:1px solid #393939;
-  margin-left:-50px;
-}
-input{
-  color:#393939;
-  padding-left:5px;
-}
-
-.submit{
-  height:35px;
-  width:120px;
-  border-radius:8px;
-  color:#393939;
-  border:1px solid #393939;
-  background-color: white;
-  font-size:15px;
-}
-
-.terms{
-  margin-left:460px;
-  margin-top:10px;
-  font-size:14px;
-  font-family:;
-  color:#393939;
-  letter-spacing: 1px;
-  margin-bottom:7px;
-}
-
-.signsign{
-  margin-bottom:20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 
 .footer {
@@ -302,3 +239,4 @@ input{
 .footer-link:hover {
   text-decoration: underline;
 }
+

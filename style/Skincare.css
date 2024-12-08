@@ -202,93 +202,10 @@ img{
   transform: translateY(-5px);
 }
 
-/*sign up-i*/
-.sign{
-  margin-left:460px;
-  margin-top:20px;
-  font-size:20px;
-  font-family:;
-  color:#393939;
-  letter-spacing: 1.5px;
-  margin-bottom:10px;
-  font-weight: bold;
-}
-
-#update{
-  display:flex;
-  flex-direction: row;
-  gap:20px;
-  justify-content: center;
-
-}
-
-.email{
-  height:35px;
-  width:400px;
-  border-radius:8px;
-  border:1px solid #393939;
-  margin-left:-50px;
-}
-input{
-  color:#393939;
-  padding-left:5px;
-}
-
-.submit{
-  height:35px;
-  width:120px;
-  border-radius:8px;
-  color:#393939;
-  border:1px solid #393939;
-  background-color: white;
-  font-size:15px;
-}
-
-.terms{
-  margin-left:460px;
-  margin-top:10px;
-  font-size:14px;
-  font-family:;
-  color:#393939;
-  letter-spacing: 1px;
-  margin-bottom:7px;
-}
-
-.signsign{
-  margin-bottom:20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-/*footer*/
-
-footer{
-  margin:0;
-  padding:0;
-}
-.footer {
-  background-color: #ff8ca4;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  margin-bottom:0;
-}
-.footer-links {
-margin-bottom: 20px;
-}
-.footer-link {
-color: white;
-text-decoration: none;
-margin: 0 10px;
-}
-.footer-link:hover {
-text-decoration: underline;
-}
 
 #skincare{
   margin-top:20px;
-  height:220px;
+  height:200px;
   width:auto;
   background-color: white;
   border:2px solid lightpink;
@@ -298,7 +215,7 @@ text-decoration: underline;
 .ordinary{
   margin-top:0px;
   width:auto;
-  height:200px;
+  height:180px;
   margin-left:900px;
   margin-bottom:-70px;
   background: transparent;
@@ -345,6 +262,29 @@ text-decoration: underline;
   color:#393939;
   text-decoration: underline;
 
+}
+.photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color:#ff8ca4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+.footer-links {
+margin-bottom: 20px;
+}
+.footer-link {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+}
+.footer-link:hover {
+text-decoration: underline;
 }
 /*
 #container-3{
