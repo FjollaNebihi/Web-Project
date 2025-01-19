@@ -14,13 +14,13 @@
         <p class="bliss">BLISS</p>
     </div>
     <div class="container-2">
-        <a href="sale.html"><button class="button-sale">SALE</button></a>
+        <a href="sale.php"><button class="button-sale">SALE</button></a>
         <button class="button">New</button>
-        <a href="brands.html"><button class="button">Brands</button></a>
+        <a href="brands.php"><button class="button">Brands</button></a>
         <a href="Skincare.html"><button class="button-1" id="skin-care-button">Skin Care</button></a>
         <button class="button">Hair Care</button>
         <button class="button">Make Up</button>
-        <a href="bestsellers.html"><button class="button">Best Sellers</button></a>
+        <a href="bestsellers.php"><button class="button">Best Sellers</button></a>
         <button class="button-gift">Gifts & Gift Cards</button>
     </div>
 

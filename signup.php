@@ -32,7 +32,7 @@
         <div id="error5"></div>
         <button class="submit" onclick="validateForm()">Sign Up</button>
   
-        <p class="log-in">Already have an account?<a href="login.html"> Log in.</a></p>
+        <p class="log-in">Already have an account?<a href="login.php"> Log in.</a></p>
       
 
     </form>

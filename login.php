@@ -32,7 +32,7 @@
 
         <button class="submit" onclick="validateForm()">Log in</button>
 
-        <p class="sign-up">Don't have an account? <a href="signup.html">Sign up.</a></p>
+        <p class="sign-up">Don't have an account? <a href="signup.php">Sign up.</a></p>
       </form>
     </div>
   </div>

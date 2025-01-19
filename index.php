@@ -13,9 +13,9 @@
   <div class="header">
     
 
-    <p class="text">Sign up or <a href=login.html class="">log in</a>  to your account for free shipping.</p>
+    <p class="text">Sign up or <a href=login.php class="">log in</a>  to your account for free shipping.</p>
     <div class="account">
-     <a href="signup.html" >
+     <a href="signup.php" >
       <button class="sign-up">Sign Up</button>
      </a>
      <a href="login.html">
@@ -32,14 +32,14 @@
   </div>
 
   <div class="container">
-    <a href="sale.html"><button class="button-sale">SALE</button></a>
+    <a href="sale.php"><button class="button-sale">SALE</button></a>
       
     <button class="button">New</button>
-    <a href="brands.html"><button class="button">Brands</button></a>
-    <a href="Skincare.html"><button class="button">Skin Care</button></a>
+    <a href="brands.php"><button class="button">Brands</button></a>
+    <a href="Skincare.php"><button class="button">Skin Care</button></a>
     <button class="button">Hair Care</button>
     <button class="button">Make Up</button>
-    <a href="bestsellers.html"><button class="button-1">Best Sellers</button></a>
+    <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
     <button class="button-gift">Gifts & Gift Cards</button>
   </div>
   
@@ -53,7 +53,7 @@
 
 <div class="button-container">
 
-  <a href="bestsellers.html"><button class="bests">shop our best sellers</button></a>
+  <a href="bestsellers.php"><button class="bests">shop our best sellers</button></a>
   <button class="btn">shop now</button>
 </div>
 
