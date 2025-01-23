@@ -15,23 +15,43 @@ function validateForm(){
   
   if(name.length==0 ){
     error1.innerHTML="Please enter your first name!";
+    name.focus();
     return false;
   }
   else if(lastname=="" ){
     error2.innerHTML="Please enter your last name!";
+    lastname.focus();
     return false;
   }
   else if(username=="" ){
     error3.innerHTML="Please create a username!";
+    username.focus();
     return false;
   }
   else if(email==="" ){
     error4.innerHTML="A valid email address is requested!";
+    email.focus();
     return false;
   }
- 
+  else if(!email.includes("gmail.com")){
+    error4.innerHTML="A valid email address is requested!";
+    email.focus();
+    return false;
+  }
+  else if(!email.includes("yahoo.com")){
+    error4.innerHTML="A valid email address is requested!";
+    email.focus();
+    return false;
+  }
+  else if(!email.includes("outlook.com")){
+    error4.innerHTML="A valid email address is requested!";
+    email.focus();
+    return false;
+  }
+
 if(password_length<8){
   error5.innerHTML="Password should have at least 8 characters";
+  password.focus();
   return false;
   }
   

@@ -7,22 +7,44 @@
     <link rel="stylesheet" href="style/Skincare.css">
 </head>
 <body>
-    <div class="header">
-        <p class="text">Take care of your skin with this season's best products!</p>
+<div class="header">
+    <div class="slider">
+    <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
+
+    <script>
+      const teksti=[
+  "Take care of your skin with this season's best products!",
+  "Discover the secret to glowing skin today!",
+  "Nourish your skin with our premium skincare range.",
+  "Achieve healthy, radiant skin effortlessly!",
+  "Indulge in self-care with our luxurious skincare products."
+];
+
+let i=0
+
+function ndrroTekstin(){
+  const sliderText = document.getElementById("slider-text");
+  i = (i + 1) % teksti.length; 
+  sliderText.textContent = teksti[i];
+}
+
+setInterval(ndrroTekstin, 4000);
+</script>
     <div class="logo">
         <p class="bliss">BLISS</p>
     </div>
     <div class="container-2">
-        <a href="sale.php"><button class="button-sale">SALE</button></a>
-        <button class="button">New</button>
-        <a href="brands.php"><button class="button">Brands</button></a>
-        <a href="Skincare.html"><button class="button-1" id="skin-care-button">Skin Care</button></a>
-        <button class="button">Hair Care</button>
-        <button class="button">Make Up</button>
-        <a href="bestsellers.php"><button class="button">Best Sellers</button></a>
-        <button class="button-gift">Gifts & Gift Cards</button>
-    </div>
+            <a href="sale.php"><button class="button-sale">SALE</button></a>
+      
+      <button class="button">New</button>
+      <a href="brands.php"><button class="button">Brands</button></a>
+      <a href="Skincare.php"><button class="button-1">Skin Care</button></a>
+      <button class="button">Hair Care</button>
+      <button class="button">Make Up</button>
+      <a href="bestsellers.php"><button class="button">Best Sellers</button></a>
+      <button class="button-gift">Gifts & Gift Cards</button>
+        </div>
 
     <div id="container">
         <!-- Products -->

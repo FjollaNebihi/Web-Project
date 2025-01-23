@@ -11,14 +11,17 @@ let error2 = document.getElementById("error2");
  
  if (username == ""){
    error1.innerHTML="Username must be filled out!";
+   username.focus();
     return false;
  } 
  if (password.length<8) {
     error2.innerHTML="Password should have at least 8 characters!";
+    password.focus();
  } 
  else {
     alert("Logged in successfully!")
     return true;
  } 
+ alert("Trouble logging in?")
  return false;
 }

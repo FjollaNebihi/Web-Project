@@ -11,14 +11,36 @@
 </head>
 <body>
   <div class="header">
-    
+    <div class="slider">
+    <p id="slider-text" class="text">Sign up or <a href=login.php class="">log in</a>  to your account for free shipping.</p>
+    </div>
 
-    <p class="text">Sign up or <a href=login.php class="">log in</a>  to your account for free shipping.</p>
+    <script>
+      const teksti=[
+  "Take care of your skin with this season's best products!",
+  "Discover the secret to glowing skin today!",
+  "Nourish your skin with our premium skincare range.",
+  "Achieve healthy, radiant skin effortlessly!",
+  "Indulge in self-care with our luxurious skincare products."
+];
+
+let i=0
+
+function ndrroTekstin(){
+  const sliderText = document.getElementById("slider-text");
+  i = (i + 1) % teksti.length; 
+  sliderText.textContent = teksti[i];
+}
+
+setInterval(ndrroTekstin, 4000);
+</script>
+
+
     <div class="account">
      <a href="signup.php" >
       <button class="sign-up">Sign Up</button>
      </a>
-     <a href="login.html">
+     <a href="login.php">
       <button class="log-in">Log In</button>
      </a>
      
@@ -68,4 +90,6 @@
   </div>
   <p>© 2024 My Website. All rights reserved.</p>
 </footer>
+
+</body>
 </html>

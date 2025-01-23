@@ -12,12 +12,36 @@
 
 </head>
 <body>
-  <div class="header">
-    <p class="text">Check out this month's best selling products!</p>
+<div class="header">
 
+    <div class="slider">
+
+
+    <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
 
+    <script>
+      const teksti=[
+  "Take care of your skin with this season's best products!",
+  "Discover the secret to glowing skin today!",
+  "Nourish your skin with our premium skincare range.",
+  "Achieve healthy, radiant skin effortlessly!",
+  "Indulge in self-care with our luxurious skincare products."
+];
+
+let i=0
+
+function ndrroTekstin(){
+  const sliderText = document.getElementById("slider-text");
+  i = (i + 1) % teksti.length; 
+  sliderText.textContent = teksti[i];
+}
+
+setInterval(ndrroTekstin, 4000);
+</script>
+
     <div class="logo">
+      
       <p class="bliss">BLISS</p>
     </div>
 
@@ -162,11 +186,9 @@
         <a href="/privacy" class="footer-link">Privacy Policy</a>
         <span>|</span>
         <a href="/contact" class="footer-link">Contact us</a>
-    </div>  
-    
+    </div>
     <p>© 2024 My Website. All rights reserved.</p>
-  </footer>
-
+</footer>
 
 </body>
 </html>
