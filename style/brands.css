@@ -51,56 +51,39 @@ p{
   justify-content:space-evenly;
   padding-top:20px;
 }
-#produktet{
-  border:1px solid #FF8BA0;
-  border-radius:9px;
-  margin-top:60px;
-  display:flex;
-  align-items:center;
-  height:300px;
-  width:300px;
-  position: relative;
-  margin:5px;
-  font-size:15px;
-  color:pink;
-  background-color: rgb(255, 255, 255);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-#produktet:hover{
-  transform: translateY(-5px);
-}
 
 
-.button{
+#button{
   margin-bottom:265px;
   margin-left:6px;
   border-radius:2px;
   height:20px;
+  width:105px;
   background-color: #FF8BA0;
   color:white;
   border:1px solid #FF8BA0;
   width:110px;
   font-weight: bold;
-  font-size:12px;
+  font-size:14px;
   position: absolute;
 }
 
-.button-1 .button-sale .button-gift{
+#button-2{
   margin-bottom:255px;
   margin-left:190px;
   border-radius:10px;
   height:30px;
-
+  width:105px;
   background-color:#ffffff;
   border:1px solid #FF8BA0;
   width:100px;
   font-weight: bold;
-  font-size:12px;
+  font-size:14px;
   position: absolute;
   color:#FF8BA0;
+
 }
-#button-1:hover{
+.button-2:hover{
   box-shadow:6px 6px 6px  #FF7084;
 }
 .button-sale:hover{
@@ -127,6 +110,35 @@ p{
   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.button-sale{
+  font-size:14px;
+  color:red;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border:2px solid red;
+  background-color: white;
+  
+}
+
+
+.button-gift{
+  font-size:16x;
+  width: 150px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+
+.button-2{
+  font-size:14px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color:white;
+}
 
 .container-2{
   display: flex;
@@ -140,6 +152,45 @@ p{
   padding-bottom: 15px;
 }
 
+.button{
+  font-size:14px;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+  
+}
+
+.button-sale{
+  font-size:14px;
+  color:red;
+  width: 105px;
+  height:30px;
+  border-radius:15px; 
+  border:2px solid red;
+  background-color: white;
+}
+
+
+.button-gift{
+  font-size:14x;
+  width: 150px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color: white;
+}
+
+.button-1{
+  font-size:14px;
+  width: 115px;
+  height:30px;
+  border-radius:15px; 
+  border: 2px solid pink;
+  background-color:white;
+  box-shadow:10px 10px 10px #FF7084;
+}
 
 html, body {
   height: 100%;
@@ -231,23 +282,3 @@ margin: 0 10px;
 .footer-link:hover {
 text-decoration: underline;
 }
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
- 
-  
-  
-  
-
-  
