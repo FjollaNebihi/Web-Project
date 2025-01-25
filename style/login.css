@@ -1,3 +1,14 @@
+.header{
+  justify-content:center;
+  height:50px;
+  background-color:transparent;
+  color:black;
+  align-content: center;
+  text-align:center;
+  font-size:17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
 
 .logo{
   height:75px;
@@ -32,13 +43,12 @@ body{
   background-image: url('https://e0.pxfuel.com/wallpapers/430/919/desktop-wallpaper-pink-abstract-pink-wave.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .log-in-container{
   margin-top:150px;
   width:385px;
   height:410px;
-  position:absolute;
+  position:relative;
   max-width: 400px; 
   padding: 25px; 
   background-color: white;
@@ -74,7 +84,6 @@ form{
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  position: absolute;
 }
 input{
   padding:12px;
@@ -85,7 +94,6 @@ input{
   border:1px solid #885c5c;
   color: #000000;
   font-size:14px;
-  position: absolute;
 }
 input:placeholder{
   color:#000000;
@@ -153,22 +161,19 @@ font-size: 12px;
 }
 
 
-#error1{
-  font-size:12px;
-  color:red;
-  margin-bottom:-20px;
-  margin-right:86px;
-  margin-left:-10px;
-  position: relative;
-
+#error1 {
+  color: red; 
+  font-size: 12px; 
+  margin-top: 5px;
+  margin-left: -19px;
+  margin-right: 86px;
 }
 #error2 {
-  font-size:12px;
-  color:red;
-  margin-bottom:-20px;
-  margin-right:0px;
-  margin-left:-10px;
-  position: relative;
+  color: red; 
+  font-size: 12px; 
+  margin-top: 5px;
+  margin-left: -3px;
+  margin-right: 83px;
 }
 
 

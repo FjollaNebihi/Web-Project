@@ -1,3 +1,25 @@
+<?php
+session_start();
+include_once 'Database.php';
+include_once 'User.php';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $db=new Database();
+  $connection=$db->getConnection();
+  $user=new User($connection);
+
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+
+  if($user->LogIn($username,$password)) {
+    header(header:"Location:index.php");
+    exit;
+  }else{
+    echo "Invalid log in credentials";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

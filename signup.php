@@ -1,3 +1,29 @@
+<?php
+include_once 'Database.php';
+include_once 'User.php';
+
+if($_SERVER['REQUEST_METHOD']=='POST') {
+  $db= new Database();
+  $connection = $db-> getConnection();
+  $user= new User($connection);
+
+  $first_name=$_POST['first_name'];
+  $last_name=$_POST['last_name'];
+  $username=$_POST['username'];
+  $email=$_POST['email'];
+  $password=$_POST['password'];
+
+  //regjistrojme user dhe i ruhen te dhenat ne databaze
+  if($user->Register($first_name,$last_name,$username,$email,$password)){
+    header("Location: login.php");
+    exit;
+  }else{
+    echo "Error registering user!";
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +45,9 @@
       <h2>Create an account</h2>
 
       <form action="#" method="POST" name="SignUp" onsubmit="return validateForm()"> 
-      <input type="text" class="name" name="name" id="name" placeholder="First Name">
+      <input type="text" class="name" name="first_name" id="name" placeholder="First Name">
       <div id="error1"></div>
-      <input type="text" class="last-name" name="last-name" id="lastname" placeholder="Last Name">
+      <input type="text" class="last-name" name="last_name" id="lastname" placeholder="Last Name">
       <div id="error2"></div>
      
         <input type="text" class="username" name="username" id="username" placeholder="Create a username">

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRANDS | BLISS</title>
+    <link rel="stylesheet" href="style/brands.css">
 </head>
 <body>
-    <link rel="stylesheet" href="style/brands.css">
+    
 
-</body>
+
 </html>
 <div class="header">
     <div class="slider">
@@ -166,3 +167,5 @@ setInterval(ndrroTekstin, 4000);
             </div>
             <p>© 2024 My Website. All rights reserved.</p>
           </footer>
+          </body>
+          </html>
