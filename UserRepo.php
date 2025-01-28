@@ -34,10 +34,8 @@ function getEmail(){
 function getPassword(){
   return $this->password;
 
-
-}
-
-function insertUser($user) {
+  
+}function insertUser($user) {
   $conn = $this->connection;
 
 
