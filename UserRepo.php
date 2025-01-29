@@ -33,6 +33,7 @@ function getEmail(){
 }
 function getPassword(){
   return $this->password;
+
   
 }function insertUser($user) {
   $conn = $this->connection;
@@ -56,6 +57,7 @@ function getPassword(){
  
   echo "<script> alert('User has been inserted successfully!'); </script>";
 }
+
 function getAllUsers() {
   $conn = $this->connection;
 
