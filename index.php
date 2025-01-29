@@ -8,7 +8,11 @@ if(!isset($_SESSION['user_id'])){
 
 echo "Welcome, " .$_SESSION['username'] . "!";
 
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin') {
+    echo '<button>Admin Button</button>';
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
