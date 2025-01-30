@@ -8,11 +8,101 @@
     <title> SALE | BLISS </title>
 
     <link rel="stylesheet" href="style/sale.css">
-    
+    <script src="script/Slideri2.js">
+      var i=0;
+var imgArray=[
+ "img/R (1).png",
+ "img/R (2).png",
+ "img/R.png",
+ "img/R (3).png"
+];
 
+function ndrroImg(){
+  document.getElementById('slideshow').src=imgArray[i];
+  if(i < imgArray.length -1){
+    i++;
+  }else{
+    i=0;
+ 
+  }
+}
+document.body.addEventListener('load',ndrroImg());
+    </script>
+ 
+ <style>
+ .slider-button{
+  margin-right:-420px;
+  background-color:#ffffff;
+border:1.5px solid #FF8BA0;
+color:#FF7084;
+  border-radius: 7px;
+  margin-top:260px;
+  margin-bottom: -8px;
+  width:90px;
+  height: 22px;
+}
+
+
+#slideshow{
+  width:235px;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-right:-59px;
+  margin-left:20px;
+}
+ </style>
 
 </head>
 <body>
+
+<script src="script/Slideri3.js">
+  var i=0;
+var imagesArray=[
+"img/2faced.jpeg",
+"img/OIP.jpg",
+"img/O2jpg.jpg",
+"img/OIP3.png"
+];
+
+function FotoTjeter(){
+  document.getElementById('slider').src=imagesArray[i];
+  if(i < imagesArray.length -1){
+    i++;
+  }else{
+    i=0;
+ 
+  }
+}
+document.body.addEventListener('load',FotoTjeter());
+</script>
+
+
+<style>
+  #slider{
+    width:225px;
+    height:auto;
+    margin-top:20px;
+    margin-bottom:50px;
+    margin-right:-59px;
+    margin-left:30px;
+  }
+
+  .slider-btn{
+    margin-right:-420px;
+    background-color:#ffffff;
+  border:1.5px solid #FF8BA0;
+  color:#FF7084;
+    border-radius: 7px;
+    margin-top:260px;
+    margin-bottom: -8px;
+    width:90px;
+    height: 22px;
+  }
+</style>
+
+</head>
+</body>
 
 <div class="header">
     <div class="slider">
@@ -39,6 +129,7 @@ function ndrroTekstin(){
 setInterval(ndrroTekstin, 4000);
 </script>
 
+
         <div class="logo">
           <p class="bliss">BLISS</p>
         </div>
@@ -49,7 +140,7 @@ setInterval(ndrroTekstin, 4000);
       <button class="button">New</button>
       <a href="brands.php"><button class="button">Brands</button></a>
       <a href="Skincare.php"><button class="button">Skin Care</button></a>
-      <button class="button">Hair Care</button>>
+      <button class="button">Hair Care</button>
       <button class="button">Make Up</button>
       <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
       <button class="button-gift">Gifts & Gift Cards</button>
@@ -118,7 +209,7 @@ setInterval(ndrroTekstin, 4000);
             <div id="produktet" class="product2">
                 <button id="button">ON SALE</button>
                         <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
-                        <button onclick="ndrroImg()" class="slider-button">See more</button>
+                        <button onclick="FotoTjeter()" class="slider-button">...see more</button>
                         <p id="text">Rhode Peptide Lip Tint- Espresso</p>
                         <p id="cmimi">$23.00.</p>
                     </div>
@@ -155,7 +246,8 @@ setInterval(ndrroTekstin, 4000);
         </div>
         <div id="produktet" class="product2">
             <button id="button">ON SALE</button>
-            <img src="img/2faced.jpeg" alt="Small">
+            <img src="img/2faced.jpeg" alt="Small Image" class="small-image" id="slider">
+              <button onclick="ndrroImg()" class="slider-btn">...see more</button>
             <p id="text">Too Faced-Cloud Clush Blush</p>
             <p id="cmimi">$23.60</p>
             </div>

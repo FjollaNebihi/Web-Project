@@ -1,8 +1,9 @@
 var i=0;
 var imgArray=[
- "img/R (1).png"
- "img/R (2).png"
- "img/R.png"
+ "img/R (1).png",
+ "img/R (2).png",
+ "img/R.png",
+ "img/R (3).png"
 ];
 
 function ndrroImg(){
