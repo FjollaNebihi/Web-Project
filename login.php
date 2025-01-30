@@ -13,12 +13,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   if($user->LogIn($username,$password)) {
     header(header:"Location:index.php");
-    exit;
   }else{
     echo "Invalid log in credentials";
   }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

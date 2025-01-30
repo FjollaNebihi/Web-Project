@@ -294,8 +294,25 @@ footer{
     text-decoration: underline;
   }
 
+  .slider-button{
+    margin-left:-10px;
+    background-color:#ffffff;
+  border:1px solid #FF8BA0;
+  color:#FF7084;
+    border-radius: 2px;
+    margin-top:260px;
+    width:105px;
+  }
 
 
+#slideshow{
+  width:240px;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-right:-60px;
+  margin-left:10px;
+}
 
 
  

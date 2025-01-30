@@ -6,14 +6,15 @@
     <title>Document</title>
 
     <style>
-        body{
+  
+  body{
   background-color: #FFDDE2;
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
 
-.Dashboard-Users{
+.Dashboard-users{
   align-items: center;
   justify-content: center;
   display: flex;
@@ -34,7 +35,7 @@
   letter-spacing:5px;
  
   color:pink;
-  text-shadow:1px 1px 4px rgb(255,221,226);
+  text-shadow:1px 1px 4px 
 
 }
 
@@ -71,4 +72,29 @@ a{
 }
    
     </style>
+    </head>
+    <body>
 
+    
+   
+
+<div class="Dashboard-users">
+  <p class="bliss">BLISS</p>
+  <p class="p">DASHBOARD</p>
+  <table border="1">
+   
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th class="edit"> <a href="Edit.php">Edit</a></th>
+        <th class="delete">Delete</th> 
+    </tr>
+    
+
+    </table>
+</body>
+</html>

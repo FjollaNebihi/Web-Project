@@ -9,7 +9,7 @@
   <title>Best Sellers | Bliss</title>
  
   <link rel="stylesheet" href="style/bestsellers.css">
-
+<script src="script/slider.js"></script>
 </head>
 <body>
 <div class="header">
@@ -63,7 +63,8 @@ setInterval(ndrroTekstin, 4000);
     <div id="produktet" class="produkti-1">
       <button id="button">BEST SELLER</button>
       <button id="button-2">ADD TO FAVORITES</button>
-      <img src="img/HudaPowder.png" alt="Small Image" class="small-image">
+      <img src="img/HudaPowder.png" alt="Small Image" class="small-image" id="slideshow">
+      <button onclick="ndrroImg()" class="slider-button">See more</button>
       <p id="text">Easy Bake Loose Baking & Setting Powder</p>
       <p id="cmimi">$38.00</p></div>
       
