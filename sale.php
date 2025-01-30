@@ -8,6 +8,8 @@
     <title> SALE | BLISS </title>
 
     <link rel="stylesheet" href="style/sale.css">
+    
+
 
 </head>
 <body>
@@ -113,12 +115,14 @@ setInterval(ndrroTekstin, 4000);
             <p id="cmimi">$57.00</p>
             </div>
 
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/RhodeLipT.png" alt="Small">
-            <p id="text">Rhode Peptide Lip Tint-Espresso</p>
-            <p id="cmimi">$19.00</p>
-            </div>
+            <div id="produktet" class="product2">
+                <button id="button">ON SALE</button>
+                        <img src="img/R (1).png" alt="Small">
+                        <p id="text">Rhode Peptide Lip Tint- Espresso</p>
+                        <p id="cmimi">$23.00.</p>
+                    </div>
+            
+           
 
         <div id="produktet" class="product2">
             <button id="button">ON SALE</button>
