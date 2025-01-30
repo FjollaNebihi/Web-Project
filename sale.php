@@ -8,6 +8,9 @@
     <title> SALE | BLISS </title>
 
     <link rel="stylesheet" href="style/sale.css">
+    
+
+
 
 </head>
 <body>
@@ -42,18 +45,20 @@ setInterval(ndrroTekstin, 4000);
         </div>
 
         <div class="container-2">
-            <a href="sale.php"><button class="button-sale">SALE</button></a>
+      <a href="sale.php"><button class="button-sale">SALE</button></a>
       
       <button class="button">New</button>
       <a href="brands.php"><button class="button">Brands</button></a>
       <a href="Skincare.php"><button class="button">Skin Care</button></a>
-      <button class="button">Hair Care</button>
+      <button class="button">Hair Care</button>>
       <button class="button">Make Up</button>
       <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
       <button class="button-gift">Gifts & Gift Cards</button>
         </div>
 
         <div id="container">
+
+
 
 <div id="produktet" class="product1">
     <button id="button">ON SALE</button>
@@ -113,13 +118,14 @@ setInterval(ndrroTekstin, 4000);
             <p id="cmimi">$57.00</p>
             </div>
 
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/RhodeLipT.png" alt="Small">
-            <p id="text">Rhode Peptide Lip Tint-Espresso</p>
-            <p id="cmimi">$19.00</p>
-            </div>
-
+            <div id="produktet" class="product2">
+                <button id="button">ON SALE</button>
+                        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
+                        <button onclick="ndrroImg()" class="slider-button">See more</button>
+                        <p id="text">Rhode Peptide Lip Tint- Espresso</p>
+                        <p id="cmimi">$23.00.</p>
+                    </div>
+                    
         <div id="produktet" class="product2">
             <button id="button">ON SALE</button>
             <img src="img/kkwbeauty.png" alt="Small">
@@ -151,13 +157,24 @@ setInterval(ndrroTekstin, 4000);
             <p id="cmimi">$40.20</p>
         </div>
         <div id="produktet" class="product2">
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
             <button id="button">ON SALE</button>
             <img src="img/2faced.jpeg" alt="Small">
             <p id="text">Too Faced-Cloud Clush Blush</p>
             <p id="cmimi">$23.60</p>
+
+                    
+                </div>
+                
             </div>
             
-              
+
+            </div>
+
+          
 
             <footer class="footer">
                 <div class="footer-links">
@@ -171,7 +188,8 @@ setInterval(ndrroTekstin, 4000);
                 <p>© 2024 My Website. All rights reserved.</p>
               </footer>
             
-
+            </head>
+            </body>
 
 
 
