@@ -1,10 +1,31 @@
 <?php
+include_once 'UserRepo.php';
 class User{
-  private $conn;
-  private $table_name='user';
+  public $conn;
+  public $table_name='user';
 
   public function __construct($db){
     $this->conn=$db;
+  }
+  function getID(){
+    return $this->id;
+  }
+  function getFirstName(){
+    return $this->first_name;
+  }
+  function getLastName(){
+    return $this->last_name;
+  }
+  function getUsername(){
+    return $this->username;
+  }
+  function getEmail(){
+    return $this->email;
+  }
+  function getPassword(){
+    return $this->password;
+  
+    
   }
   public function Register($first_name,$last_name,$username,$email,$password){
     $query="INSERT INTO {$this->table_name} (first_name,last_name,username,email,password) VALUES ( :first_name, :last_name , :username , :email , :password) ";

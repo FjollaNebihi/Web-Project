@@ -1,41 +1,16 @@
-<?
+<?php
 include_once 'Database.php';
+include_once 'User.php';
 
 class UserRepo{
-  private $connection;
+  public $connection;
 
   function __construct(){
     $conn =new Database();
     $this->connection=$conn->getConnection();
   }
-  function __construct($id, $first_name, $last_name, $username, $email, $password) {
-    $this->id = $id;              
-    $this->first_name = $first_name;           
-    $this->last_name = $last_name;    
-    $this->username = $username;        
-    $this->email = $email;  
-    $this->password = $password;   
-}
-function getID(){
-  return $this->id;
-}
-function getFirstName(){
-  return $this->first_name;
-}
-function getLastName(){
-  return $this->last_name;
-}
-function getUsername(){
-  return $this->username;
-}
-function getEmail(){
-  return $this->email;
-}
-function getPassword(){
-  return $this->password;
 
-  
-}function insertUser($user) {
+function insertUser($user) {
   $conn = $this->connection;
 
 
@@ -53,6 +28,10 @@ function getPassword(){
 
 
   $statement->execute([$id, $first_name, $last_name, $username, $email, $password]);
+  if($statement->execute()){
+    return true;
+  }
+  return false;
 
  
   echo "<script> alert('User has been inserted successfully!'); </script>";
@@ -60,13 +39,10 @@ function getPassword(){
 
 function getAllUsers() {
   $conn = $this->connection;
-
   $sql = "SELECT * FROM user";
-
-  $statement = $conn->query($sql); 
-  $users = $statement->fetchAll(); 
-
-  return $users; 
+  $statement = $conn->prepare($sql);
+  $statement->execute();
+  return $statement->fetchAll(PDO::FETCH_ASSOC); // ✅ Fix: Ensures an associative array is returned
 }
 
 function getUserById($id) {
@@ -75,13 +51,13 @@ function getUserById($id) {
 
   $sql = "SELECT * FROM user WHERE id='$id'";
 
-  $statement = $conn->query($sql); 
+  $statement = $conn->prepare($sql); 
   $user = $statement->fetch(); 
 
   return $user;
 }
 
-function updateUser($id, $name, $surname, $email, $username, $password) {
+function updateUser($id, $first_name, $last_name,  $username,$email, $password) {
   $conn = $this->connection;
 
 
@@ -92,7 +68,10 @@ function updateUser($id, $name, $surname, $email, $username, $password) {
 
   $statement->execute([$first_name, $last_name, $username, $email, $password, $id]);
 
-
+  if($statement->execute()){
+    return true;
+  }
+  return false;
   echo "<script>alert('Update was successful');</script>";
 }
 function deleteUser($id) {
@@ -105,6 +84,10 @@ function deleteUser($id) {
 
  
   $statement->execute([$id]);
+  if($statement->execute()){
+    return true;
+  }
+  return false;
 
  
   echo "<script>alert('Delete was successful');</script>";
@@ -113,6 +96,7 @@ function deleteUser($id) {
 
 
 ?>
+
 
 
 
