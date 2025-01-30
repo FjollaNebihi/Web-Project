@@ -105,7 +105,7 @@ p{
   box-shadow:6px 6px 6px  #FF7084;
 }
 .button-sale:hover{
-  box-shadow:10px 10px 10px #FF7084;
+  box-shadow:10px 10px 10px red;
 }
 .button-gift:hover{
   box-shadow:10px 10px 10px#FF7084;
