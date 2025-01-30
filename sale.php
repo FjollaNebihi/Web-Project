@@ -8,6 +8,8 @@
     <title> SALE | BLISS </title>
 
     <link rel="stylesheet" href="style/sale.css">
+    
+
 
 
 </head>
@@ -43,12 +45,12 @@ setInterval(ndrroTekstin, 4000);
         </div>
 
         <div class="container-2">
-            <a href="sale.php"><button class="button-sale">SALE</button></a>
+      <a href="sale.php"><button class="button-sale">SALE</button></a>
       
       <button class="button">New</button>
       <a href="brands.php"><button class="button">Brands</button></a>
       <a href="Skincare.php"><button class="button">Skin Care</button></a>
-      <button class="button">Hair Care</button>
+      <button class="button">Hair Care</button>>
       <button class="button">Make Up</button>
       <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
       <button class="button-gift">Gifts & Gift Cards</button>
@@ -116,13 +118,14 @@ setInterval(ndrroTekstin, 4000);
             <p id="cmimi">$57.00</p>
             </div>
 
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/R (1).png" alt="Small">
-            <p id="text">Rhode Peptide Lip Tint-Espresso</p>
-            <p id="cmimi">$19.00</p>
-            </div>
-
+            <div id="produktet" class="product2">
+                <button id="button">ON SALE</button>
+                        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
+                        <button onclick="ndrroImg()" class="slider-button">See more</button>
+                        <p id="text">Rhode Peptide Lip Tint- Espresso</p>
+                        <p id="cmimi">$23.00.</p>
+                    </div>
+                    
         <div id="produktet" class="product2">
             <button id="button">ON SALE</button>
             <img src="img/kkwbeauty.png" alt="Small">
