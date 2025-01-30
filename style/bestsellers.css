@@ -297,7 +297,7 @@ footer{
     text-decoration: underline;
   }
 
-  .slider-btn{
+  .slider-button{
     margin-left:-10px;
     background-color:#ffffff;
   border:1px solid #FF8BA0;
@@ -317,7 +317,90 @@ footer{
   margin-left:10px;
 }
 
+#produktet:hover{
+  transform: translateY(-5px);
+}
+   
+    @media screen and (max-width: 1024px) {
+      .bliss {
+        font-size: 28px;
+      }
+      .container-2{
+        gap: 5px;
+      }
+      .button, .button-sale, .button-gift {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 767px){
+      .container-2 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+        height:70px;
+        gap:10px;
+        width:100%;
 
+
+      }
+      .button-2{
+        width:80%;
+      }
+      
+      .button, .button-sale,.button-1  {
+        width:100px;
+
+      }
+      .button-gift{
+        width:115px;
+        padding-top:0px;
+        font-size:12px;
+      }
+      #container{
+       
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      #produktet {
+        width: 60%;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      
+      
+      .container-2 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+        height:120px;
+        gap:7px;
+        width:100%;
+        
+
+
+      }
+      .button, .button-sale,.button-1  {
+        width:100px;
+
+      }
+      .button-2{
+        width:60%;
+        margin-left:4px;
+      }
+      .button-gift{
+        width:115px;
+        padding-top:2px;
+      }
+      #container {
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      #produktet {
+        width: 70%;
+      }
+    }
  
   
   
