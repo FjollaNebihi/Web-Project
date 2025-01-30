@@ -1,3 +1,10 @@
+<?php
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin') {
+    echo "Welcome, Admin!";
+} else {
+    echo "Access Denied!";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -23,6 +23,7 @@ class User{
 
     echo "<script> alert('User has been inserted successfully!'); </script>";
     }
+    
     public function LogIn($username, $password){
       $query="SELECT id , first_name , last_name , username , email , password FROM {$this->table_name} WHERE username = :username";
 
