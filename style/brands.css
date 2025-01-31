@@ -95,10 +95,7 @@ p{
 .button:hover{
   box-shadow:10px 10px 10px #FF7084;
 }
-.button-1:hover{
-  box-shadow:10px 10px 10px #FF7084;
 
-}
 
 
 #text{
@@ -182,7 +179,7 @@ p{
   background-color: white;
 }
 
-.button-1 .button-bs{
+.button-1 ,.button-bs{
   font-size:14px;
   width: 115px;
   height:30px;

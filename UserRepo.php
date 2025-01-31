@@ -57,21 +57,18 @@ function getUserById($id) {
   return $user;
 }
 
-function updateUser($id, $first_name, $last_name,  $username,$email, $password) {
+function updateUser($id, $first_name, $last_name,  $username,$email,$role, $password) {
   $conn = $this->connection;
 
 
-  $sql = "UPDATE user SET first_name=?, last_name=?,  username=?,email=?, password=? WHERE id=?";
+  $sql = "UPDATE user SET first_name=?, last_name=?,  username=?,email=?, role=?,password=? WHERE id=?";
 
   $statement = $conn->prepare($sql); 
 
 
-  $statement->execute([$first_name, $last_name, $username, $email, $password, $id]);
+  $statement->execute([$first_name, $last_name, $username, $email, $role ,$password, $id]);
 
-  if($statement->execute()){
-    return true;
-  }
-  return false;
+  
   echo "<script>alert('Update was successful');</script>";
 }
 function deleteUser($id) {
@@ -85,12 +82,13 @@ function deleteUser($id) {
  
   $statement->execute([$id]);
   if($statement->execute()){
+    echo "<script>alert('Delete was successful');</script>";
     return true;
   }
   return false;
 
  
-  echo "<script>alert('Delete was successful');</script>";
+  
 }
 }
 

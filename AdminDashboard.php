@@ -84,6 +84,7 @@ table{
   border-color:2px solid red;
   width:90px;
   text-decoration: none;
+  text-shadow:4px 4px 4px hotpink;
 }
 a{
   text-decoration: none;
@@ -165,9 +166,12 @@ a{
         <th>Last name</th>
         <th>Username</th>
         <th>Email</th>
-        <th>Password</th>
+        <th>Role</th>
+       
         <th class="edit"> <a href="Edit.php">Edit</a></th>
         <th class="delete">Delete</th> 
+        <th>Password</th>
+       
 
         <?php
         include_once 'UserRepo.php';
@@ -183,12 +187,15 @@ a{
                 <td>$user[last_name]</td> <!-- Mbiemri i përdoruesit -->
                  <td>$user[username]</td> <!-- Emri i përdoruesit për hyrje -->
                 <td>$user[email]</td> <!-- Email-i i përdoruesit -->
-                <td>$user[password]</td> <!-- Email-i i përdoruesit -->
+                <td>$user[role]</td>
+                
                
                 
-                <td><a href='edit.php?id=$user[id]'>Edit</a></td> <!-- Link për redaktim me ID -->
-                <td><a href='delete.php?id=$user[id]'>Delete</a></td> <!-- Link për fshirje me ID -->
+                <td><a href='Edit.php?id=$user[id]'>Edit</a></td> <!-- Link për redaktim me ID -->
+                <td><a href='DeleteUser.php?id=$user[id]'>Delete</a></td> <!-- Link për fshirje me ID -->
+                <td>$user[password]</td> <!-- Email-i i përdoruesit -->
             </tr>
+            
           ";
         }
         ?>

@@ -25,7 +25,10 @@ class User{
   function getPassword(){
     return $this->password;
   
-    
+  }
+  function getRole(){
+    return $this->role;
+  
   }
   public function Register($first_name,$last_name,$username,$email,$password){
     $query="INSERT INTO {$this->table_name} (first_name,last_name,username,email,password) VALUES ( :first_name, :last_name , :username , :email , :password) ";

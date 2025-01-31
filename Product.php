@@ -1,4 +1,4 @@
-Qetu shkon njejt si te user veq tash e lidh tabelen e produktev
+
 <?php
 class Product{
     private $conn;
