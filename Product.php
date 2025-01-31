@@ -19,11 +19,23 @@ class Product{
         $statement->bindParam(':Price_OnSale', $Price_OnSale);
         $statement->bindParam(':Stock', $Stock);
 
-        if($statement->execute()){
-          return true;
+        $statement=$this->conn->prepare($query);
+        $statement->bindParam(':username', $username);
+        $statement->execute();
+        
+  
+        if($statement->rowCount() > 0){
+          $row=$statement->fetch(PDO::FETCH_ASSOC);
+          if(password_verify($password,$row['password'])){
+            //Fillon nje session
+            session_start();
+            $_SESSION['user_id']=$row['id'];
+            $_SESSION['username']=$row['username'];
+            return true;
+          }
         }
         return false;
-      echo "<script> alert ('');</script>;"
-      }
-    
-} 
+      } 
+  }
+  
+  ?>
