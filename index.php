@@ -78,6 +78,16 @@ setInterval(ndrroTekstin, 4000);
     <button class="button">Make Up</button>
     <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
    <button class="button-gift">Gifts & Gift Cards</button>
+
+   <a href="logout.php"><button style="font-size:14px;
+        width: 105px;
+        height:30px;
+        border-radius:15px; 
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;">LOG OUT</button>
+  </a>
+  
   </div>
   
   <div class="content">

@@ -16,6 +16,7 @@ p{
 }
 
 .header{
+
   justify-content:center;
   height:50px;
   background-color: rgb(255,221,226);
@@ -208,6 +209,7 @@ p{
   border: 2px solid pink;
   background-color: white;
 }
+
 .button-sale{
   font-size:14px;
   color:red;
