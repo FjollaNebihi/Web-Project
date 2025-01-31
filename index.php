@@ -8,9 +8,12 @@ if(!isset($_SESSION['user_id'])){
 
 echo "Welcome, " .$_SESSION['username'] . "!";
 
-if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin') {
-    echo '<button>Admin Button</button>';
+
+if (isset($_SESSION['getRole']) && $_SESSION['getRole'] === 'Admin') { 
+    echo '<a href="AdminDashboard.php><button>ADMIN</button></a>';
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -58,6 +61,10 @@ setInterval(ndrroTekstin, 4000);
      <a href="login.php">
       <button class="log-in">Log In</button>
      </a>
+     <?php 
+     if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin') { 
+      echo "<button>ADMIN</button>";}
+      ?>
      
     </div>
   </div>

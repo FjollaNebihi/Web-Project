@@ -50,9 +50,9 @@ body{
 .sign-up-container{
   position:absolute;
   margin-right: 0;
-  margin-top:80px;
-  width:380px;
-  height:550px;
+  margin-top:50px;
+  width:400px;
+  height:570px;
   position: absolute;
   max-width: 480px;
   padding:25px;
@@ -110,7 +110,7 @@ input:focus{
 }
 
 
-.submit{
+.EDIT{
   font-size:18px;
   margin:20px;
   margin-right:50px;
@@ -122,7 +122,7 @@ input:focus{
   font-size:15px;
   margin-bottom: 20px;
   flex: 1 1 calc(50% - 10px);
-  width:150px;
+  width:170px;
 }
 .submit:hover{
   opacity: 0.2;

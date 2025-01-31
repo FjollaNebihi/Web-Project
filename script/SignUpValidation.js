@@ -28,12 +28,7 @@ function validateForm(){
     username.focus();
     return false;
   }
-  else if(email==="" ){
-    error4.innerHTML="A valid email address is requested!";
-    email.focus();
-    return false;
-  }
-  else if(!email.includes("gmail.com")){
+  else if(email==="" || !email.includes("gmail.com")){
     error4.innerHTML="A valid email address is requested!";
     email.focus();
     return false;
