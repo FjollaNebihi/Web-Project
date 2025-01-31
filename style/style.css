@@ -272,3 +272,124 @@ display: inline-block;
   text-decoration: underline;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .bliss {
+    font-size: 30px;
+  }
+  .container-2{
+    gap: 5px;
+  }
+  .button, .button-sale, .button-gift, .button-1 {
+    font-size: 12px;
+    }
+    .footer{
+      background-color:FF3256;
+      font-size: medium;
+    }
+    .logo{
+    background-color:FF3256 ;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+  .bliss {
+    font-size: 25px;
+    margin-top: 8px;
+   
+  }
+
+  .welcome-container h3 {
+    font-size: 19px;
+}
+.welcome-container h1 {
+  font-size: 22px; 
+}
+.tagline{
+  font-size: smaller;
+}
+
+    .footer{
+      background-color:FF3256;
+      font-size:small;
+      height: 50px;
+    }
+    .logo{
+    background-color:FF3256 ;
+    height:75px ;
+    }
+    .bests{
+      font-size:12px;
+      width: 140px;
+      height:30px;
+  }
+  .btn{
+    font-size:12px;
+    width: 95px;
+    height:27px;
+  }
+  .sign-up,.log-in{
+  height:25px;
+  width:95px;
+  font-size:11px;
+  margin-right: -7px;
+  }
+ .button-sale{
+  width:70px;
+  height: 25px;
+  font-size:10px ;
+ }
+ .button-1{
+  width:70px;
+  height: 25px;
+  font-size:10px ;
+ }
+.button-gift{
+  width:100px;
+  height: 25px;
+  font-size:10px ;
+ }
+ .button{
+  display: flex;
+  flex-wrap: wrap;
+  width:70px;
+  height: 25px;
+  font-size:10px ;
+
+ }
+}
+
+
+
+@media screen and (max-width: 480px){
+  container-2 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:wrap;
+    height:120px;
+    gap:7px;
+    width:100%;
+    
+
+
+  }
+  .button, .button-sale,.button-1  {
+    width:100px;
+
+  }
+  .button-2{
+    width:60%;
+    margin-left:4px;
+  }
+  .button-gift{
+    width:115px;
+    padding-top:2px;
+  }
+  #container {
+    flex-direction: column;
+    align-items: center;
+    
+}
+}
+

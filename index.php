@@ -67,6 +67,8 @@ setInterval(ndrroTekstin, 4000);
   <div class="logo">
     <p class="bliss">BLISS</p>
   </div>
+  
+  
 
   <div class="container">
     <a href="sale.php"><button class="button-sale">SALE</button></a>
