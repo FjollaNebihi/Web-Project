@@ -89,7 +89,7 @@ setInterval(ndrroTekstin, 4000);
     color:white;
     border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;">LOG OUT</button>
   </a>
-  
+
   </div>
   
   <div class="content">
