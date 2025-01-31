@@ -5,6 +5,24 @@
 include_once 'UserRepo.php';
 include_once 'Database.php';
 
+session_start();
+
+if(!isset($_SESSION['user_id'])){
+  header("Location:login.php");
+  exit;
+}
+if($_SESSION['role'] === 'User'){
+  die('you dont have access to this page.');
+}
+
+
+echo "Welcome, " .$_SESSION['username'] . "!";
+
+
+
+
+
+
 
 
 ?>
@@ -96,7 +114,7 @@ a{
 }
 .admin{
   height:40px;width:330px;color:#FFDDE2;background-color: white;
-  margin-left:600px;
+  margin-left:450px;
   border-color:4px solid white;
   color:hotpink;
   font-size: 16px;
@@ -106,8 +124,8 @@ a{
 
 }
 .add{
-  height:40px;width:175px;color:#FFDDE2;background-color: white;
-  margin-left:680px;
+  height:40px;width:195px;color:#FFDDE2;background-color: white;
+  margin-left:660px;
   border-color:4px solid white;
   color:hotpink;
   font-size: 16px;
@@ -130,7 +148,7 @@ a{
 <body>
   
   <button class="admin" >You have admin privileges!</button>
-  <a href="AddProduct.html"><button class="add">ADD A PRODUCT</button></a>
+  <a href="index.php"><button class="add">Go back to home page!</button></a>
 
   <div class="DASH">
 <div class="Dashboard-products">
@@ -149,6 +167,7 @@ a{
       <th>Stock</th>
       <th class="edit"> <a href="edit.html">Edit Product</a></th>
       <th class="delete">Delete Product</th> 
+      <th class="edit"><a href="AddProduct.html">Add Product</a></th>
   </tr>
 
 
@@ -156,6 +175,8 @@ a{
 </table>
   </div>
   <div class="Dashboard-users">
+ 
+     
   <p class="bliss">BLISS</p>
   <p class="p">USERS</p>
   <table border="1">

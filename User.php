@@ -49,11 +49,12 @@ class User{
     }
     
     public function LogIn($username, $password){
-      $query="SELECT id , first_name , last_name , username , email , password FROM {$this->table_name} WHERE username = :username";
+      $query="SELECT id , first_name , last_name , username , email , role, password FROM {$this->table_name} WHERE username = :username";
 
       $statement=$this->conn->prepare($query);
       $statement->bindParam(':username', $username);
       $statement->execute();
+
 
       if($statement->rowCount() > 0){
         $row=$statement->fetch(PDO::FETCH_ASSOC);
@@ -62,6 +63,8 @@ class User{
           session_start();
           $_SESSION['user_id']=$row['id'];
           $_SESSION['username']=$row['username'];
+          $_SESSION['role']=$row['role'];
+
           return true;
         }
       }

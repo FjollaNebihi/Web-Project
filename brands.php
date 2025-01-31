@@ -50,6 +50,13 @@ setInterval(ndrroTekstin, 4000);
     </div>
 
     <div class="container-2">
+    <a href="index.php"><button style="font-size:14px;
+        width: 105px;
+        height:30px;
+        border-radius:15px; 
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;" >Home</button></a>
         <a href="sale.php"><button class="button-sale">SALE</button></a>
       
         <button class="button">New</button>

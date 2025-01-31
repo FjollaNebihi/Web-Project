@@ -2,6 +2,7 @@
 session_start();
 include_once 'Database.php';
 include_once 'User.php';
+include_once 'UserRepo.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $db=new Database();
@@ -11,11 +12,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $username=$_POST['username'];
   $password=$_POST['password'];
 
-  if($user->LogIn($username,$password)) {
-    header(header:"Location:index.php");
-  }else{
-    echo "Invalid log in credentials";
+  $user->LogIn($username, $password);
+
+
+  if($user->LogIn($username, $password)) {
+    if($_SESSION['role'] === 'Admin'){
+        header("Location:index.php");
+  } else {
+      header("Location: index.php"); 
   }
+  exit();
+} else {
+  echo "Invalid login credentials";
+}
 }
 ?>
 

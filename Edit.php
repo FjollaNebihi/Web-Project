@@ -5,19 +5,12 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     die("Invalid user ID.");
 }
 
-$userId = intval($_GET['id']);
-$name = htmlspecialchars($_POST['first_name']);
-$surname = htmlspecialchars($_POST['last_name']);
-$username = htmlspecialchars($_POST['username']);
-$email = htmlspecialchars($_POST['email']);
-$role = htmlspecialchars($_POST['role']);
-$password = htmlspecialchars($_POST['password']);
 
 
 include_once 'UserRepo.php';
 
 $UserRepository = new UserRepo();
-$user = $UserRepository->getUserById($userId);
+$user = $UserRepository->getUserById('id');
 
 
 
@@ -56,21 +49,21 @@ if (isset($_POST['EDIT'])) {
             
             <form action="" method="POST" name="SignUp" onsubmit="return validateForm()"> 
                 <input type="text" name="id" value="<?php echo htmlspecialchars($userId); ?>" readonly>
-                <input type="text" class="name" name="name" id="name" value="<?php echo $name ?>" placeholder="First Name">
+                <input type="text" class="name" name="name" id="name"  placeholder="First Name" >
                 <div id="error1"></div>
 
-                <input type="text" class="last-name" name="surname" id="lastname" value="<?php echo $surname ?>" placeholder="Last Name">
+                <input type="text" class="last-name" name="surname" id="lastname"  placeholder="Last Name">
                 <div id="error2"></div>
                 
-                <input type="text" class="username" name="username" id="username" value="<?php echo $username ?>" placeholder="Username">
+                <input type="text" class="username" name="username" id="username"  placeholder="Username">
                 <div id="error3"></div>
 
-                <input type="text" class="email" name="email" id="email" value="<?php echo $email ?>" placeholder="Email address">
+                <input type="text" class="email" name="email" id="email"  placeholder="Email address">
                 <div id="error4"></div>
 
-                <input type="text" class="username" name="role" id="role" value="<?php echo $role ?>" placeholder="Role">
+                <input type="text" class="username" name="role" id="role"  placeholder="Role">
                 
-                <input type="password" class="password" name="password" id="password" value="<?php echo $password ?>" placeholder="New Password" >
+                <input type="password" class="password" name="password" id="password"  placeholder="New Password" >
                 <div id="error5"></div>
                 
                 <button type="submit" name="EDIT" style="font-size:18px; margin:10px; padding:10px; background: transparent; border:1px solid #885c5c; border-radius:10px; font-size:15px; width:260px;height:40px;">

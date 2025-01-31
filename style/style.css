@@ -130,16 +130,8 @@ p{
 }
 
 
-.sign-up,.log-in{
-  margin-bottom: 4px;
-  margin-top:6px;
-  border-radius: 15px;
-  background-color: white;
-  color:black;
-  height:30px;
-  width:115px;
-  border:2px solid pink;
-  font-size:13px;
+.sign-up,{
+ 
 }
 
 html, body {

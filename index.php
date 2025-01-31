@@ -1,17 +1,12 @@
 <?php
 session_start();
 
+
 if(!isset($_SESSION['user_id'])){
   header("Location:login.php");
   exit;
 }
 
-echo "Welcome, " .$_SESSION['username'] . "!";
-
-
-if (isset($_SESSION['getRole']) && $_SESSION['getRole'] === 'Admin') { 
-    echo '<a href="AdminDashboard.php><button>ADMIN</button></a>';
-}
 
 
 ?>
@@ -54,17 +49,27 @@ setInterval(ndrroTekstin, 4000);
 </script>
 
 
-    <div class="account">
-     <a href="signup.php" >
-      <button class="sign-up">Sign Up</button>
+      <?php 
+   
+    if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'){
+   echo '<div class="account">
+     <a href="AdminDashboard.php" >
+      <button style=" font-size:14px;
+      width: 230px;
+      height:30px;
+      border-radius:15px; 
+      background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;align-self: left;">You are an admin on this page.</button>
      </a>
-     <a href="login.php">
-      <button class="log-in">Log In</button>
-     </a>
-     <?php 
-     if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin') { 
-      echo "<button>ADMIN</button>";}
-      ?>
+    </div>
+    ';
+    }
+     ?>
+    
+    
+
+     
      
     </div>
   </div>
@@ -85,9 +90,18 @@ setInterval(ndrroTekstin, 4000);
     <a href="Skincare.php"><button class="button">Skin Care</button></a>
     <button class="button">Hair Care</button>
     <button class="button">Make Up</button>
-    <a href="bestsellers.php"><button class="button-1">Best Sellers</button></a>
+    <a href="bestsellers.php"><button class="button-1" >Best Sellers</button></a>
    <button class="button-gift">Gifts & Gift Cards</button>
-
+   <?php 
+   
+    if ( $_SESSION['role'] === 'Admin'){
+        echo '<a href="AdminDashboard.php">
+            <button style="font-size:14px; width: 150px; height: 30px; border-radius: 15px; background-color: #ffffff; color: #FF8BA0; border: none; box-shadow: 2px 2px 2px black;">
+                Admin Dashboard
+            </button>
+        </a>';
+    }
+    ?>
    <a href="logout.php"><button style="font-size:14px;
         width: 105px;
         height:30px;
