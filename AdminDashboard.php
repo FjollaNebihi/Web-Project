@@ -4,7 +4,7 @@
       
 include_once 'UserRepo.php';
 include_once 'Database.php';
-// include_once 'CRUDProduct.php';
+include_once 'CRUDProduct.php';
 
 session_start();
 
@@ -162,6 +162,8 @@ a{
       <th>Image</th>
       <th style="width:150px;">Product name</th>
       <th>Price</th>
+      <th>Description</th>
+      
   
       <th class="edit"> <a href="edit.html">Edit Product</a></th>
       <th class="delete">Delete Product</th> 

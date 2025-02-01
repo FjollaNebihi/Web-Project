@@ -17,15 +17,14 @@ class CRUDProduct{
     $ProductID=$produktet->getID();
     $Image=$produktet->getImage();
     $Product_Name=$produktet->getProduct_Name();
-    $Brand=$produktet->getBrand();
     $Price=$produktet->getPrice();
     $Description=$produktet->getDescription();
 
-    $sql="INSERT INTO produktet (ProductID , Image , Product_Name, Brand , Price,Description) VALUES ( ? ,? ,? ,?,?,?)";
+    $sql="INSERT INTO produktet (ProductID , Image , Product_Name, Price,Description) VALUES ( ? ,? ,? ,?,?,?)";
 
     $statement=$conn->prepare($sql);
 
-    $statement->execute ([$ProductID,$Image,$Product_Name,$Brand,$Price,$Description]);
+    $statement->execute ([$ProductID,$Image,$Product_Name,$Price,$Description]);
     if($statement->execute()){
       return true;
       echo "<script> alert ('Product has been inserted')</script>";
@@ -49,7 +48,7 @@ class CRUDProduct{
 
     return $produktet;
   }
-  function updateProduct($ProductID,$Image,$Product_Name,$Brand,$Price,$Description){
+  function updateProduct($ProductID,$Image,$Product_Name,$Price,$Description){
 
     $imagePath=$Image;
     $modified=$_SESSION['username'];
@@ -57,7 +56,7 @@ class CRUDProduct{
     $updateProduct="UPDATE produktet SET 
                         imagePath='$Image',
                         Product_Name='$Product_Name',
-                        Brand='$Brand',
+                
                         Price='$Price' ,
                         Description='$Description' WHERE ProductID=$ProductID";
 

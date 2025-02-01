@@ -58,16 +58,16 @@ class AddProduct{
 </head>
 <body>
     <h2>Add products</h2>
-    <form action="upload_product.php" method="post" enctype="multipart/form-data">
+    <form action="AddProduct.php" method="post" enctype="multipart/form-data">
         <label for="Product_Name">Product Name:</label><br>
         <input type="text" id="Product_Name" name="Product_Name" required><br><br>
 
       
         <label for="Price">Price:</label><br>
-        <input type="number" id="Price" name="Price"  required><br><br>
-        
+        <input type="text" id="Price" name="Price"  required><br><br>
+
         <label for="Description">Description:</label><br>
-        <input type="number" id="Description" name="Description"  required><br><br>
+        <input type="text" id="Description" name="Description"  required><br><br>
 
 
         
