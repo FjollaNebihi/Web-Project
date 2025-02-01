@@ -18,27 +18,47 @@ if(!isset($_SESSION['user_id'])){
 <body>
 <div class="header">
     <div class="slider">
-        <button class="admin" >You have admin privileges!</button>
-        <style>
-        .admin{
-            height:30px;width:280px;color:#FFDDE2;background-color: white;
-            margin-left:-940px;
-            margin-right: 20px;
-            border: grey;
-            border-radius: 10px;
-            border-color:4px solid white;
-            color:hotpink;
-            font-size: 13.5px;
-            font-weight: bold;
-            margin-top: 6px;
-            margin-bottom:-30px;
-            box-shadow: 2px 2px 10px white;
-          
-          }
-        </style>
+    
     <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
-
+    <div style=" display: flex;
+  justify-content: right;
+  margin-top:-30px;
+  margin-right: 30px;
+  gap:10px;">
+    <?php 
+   
+   if ( $_SESSION['role'] === 'Admin'){
+       echo '<a href="AdminDashboard.php">
+           <button style="font-size:14px;
+        width: 210px;
+        height:30px;
+        border-radius:15px;
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;margin-bottom:9px;margin-top:-30">
+               You have admin privileges!
+           </button>
+       </a>';
+   }
+   ?>
+      <?php 
+   
+   if ( $_SESSION['role'] === 'User'){
+       echo '<a href="AdminDashboard.php">
+           <button style="font-size:14px;
+        width: 170px;
+        height:30px;
+        border-radius:15px;
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;margin-bottom:-40px;">
+               Welcome!
+           </button>
+       </a>';
+   }
+   ?>
+   </div>
     <script>
       const teksti=[
   "Take care of your skin with this season's best products!",
@@ -58,9 +78,11 @@ function ndrroTekstin(){
 
 setInterval(ndrroTekstin, 4000);
 </script>
+
     <div class="logo">
         <p class="bliss">BLISS</p>
     </div>
+   
     <div class="container-2" style="display: flex;
     justify-content: center;
     gap:20px;

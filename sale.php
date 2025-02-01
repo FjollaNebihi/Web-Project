@@ -119,6 +119,45 @@ document.body.addEventListener('load',FotoTjeter());
     <div class="slider">
     <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
+</div>
+<div style=" display: flex;
+  justify-content: right;
+  margin-top:-30px;
+  margin-right: 30px;
+  gap:10px;">
+    <?php 
+   
+   if ( $_SESSION['role'] === 'Admin'){
+       echo '<a href="AdminDashboard.php">
+           <button style="font-size:14px;
+        width: 210px;
+        height:30px;
+        border-radius:15px;
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;margin-bottom:9px;margin-top:-10">
+               You have admin privileges!
+           </button>
+       </a>';
+   }
+   ?>
+      <?php 
+   
+   if ( $_SESSION['role'] === 'User'){
+       echo '<a href="AdminDashboard.php">
+           <button style="font-size:14px;
+        width: 170px;
+        height:30px;
+        border-radius:15px;
+        background-color: #FF8BA0;
+    color:white;
+    border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;">
+               Welcome!
+           </button>
+       </a>';
+   }
+   ?>
+   </div>
 
   <script>
     const teksti=[
