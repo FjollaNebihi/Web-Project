@@ -153,7 +153,7 @@ if ($statement->num_rows > 0) {
                 <button class="skin">' . htmlspecialchars($row["Description"]) . '</button>
                 <img src="' . htmlspecialchars($row["Image"]) . '" class="image">
                 <p id="description">' . htmlspecialchars($row["Product_Name"]) . '</p>
-                <p id="cmimi">$' . htmlspecialchars($row["Price"]) . '</p>
+                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>
               </div>'; 
     }
 } else {
