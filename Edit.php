@@ -1,32 +1,8 @@
 <?php
-session_start();
-
-if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    die("Invalid user ID.");
-}
 
 
 
-include_once 'UserRepo.php';
 
-$UserRepository = new UserRepo();
-$user = $UserRepository->getUserById('id');
-
-
-
-if (isset($_POST['EDIT'])) {
-    $id = $user['id'];
-    $name = trim($_POST['first_name']);
-    $surname = trim($_POST['last_name']);
-    $username = trim($_POST['username']);
-    $email = trim($_POST['email']);
-    $role = trim($_POST['role']);
-    $password = trim($_POST['password']);
-
-    $UserRepository->updateUser($id, $name, $surname, $email, $role, $username, $password);
-
-    echo "<script>alert('User updated successfully!'); window.location.href='AdminDashboard.php';</script>";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">

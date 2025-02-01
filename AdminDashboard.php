@@ -16,7 +16,6 @@ if($_SESSION['role'] === 'User'){
 }
 
 
-echo "Welcome, " .$_SESSION['username'] . "!";
 
 
 
@@ -114,7 +113,7 @@ a{
 }
 .admin{
   height:40px;width:330px;color:#FFDDE2;background-color: white;
-  margin-left:450px;
+  margin-left:600px;
   border-color:4px solid white;
   color:hotpink;
   font-size: 16px;

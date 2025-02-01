@@ -1,7 +1,7 @@
 
 <?php
-include_once 'AddProduct.php';
-class Product1{
+include_once 'Database.php';
+class AddProduct{
   public $conn;
   public $table_name='produktet';
 
@@ -20,23 +20,19 @@ class Product1{
   function getPrice(){
     return $this->Price;
   }
-  function getPrice_OnSale(){
-    return $this->Price_OnSale;
-  }
   function getStock(){
     return $this->Stock;
   
     
   }
-  public function RegisterAP($Image,$Product_Name,$Brand,$Price,$Price_OnSale,$Stock){
-    $query="INSERT INTO {$this->table_name} (Image,Product_Name,Brand,Price,Price_OnSale,Stock) VALUES (:Image, :Product_Name, :Brand, :Price, :Price_OnSale, :Stock) ";
+  public function RegisterAP($Image,$Product_Name,$Brand,$Price,$Stock){
+    $query="INSERT INTO {$this->table_name} (Image,Product_Name,Brand,Price,Stock) VALUES (:Image, :Product_Name, :Brand, :Price, :Stock) ";
     $statement=$this->conn->prepare($query);
 
     $statement->bindParam(':Image', $Image);
     $statement->bindParam(':Product_Name', $Product_Name);
     $statement->bindParam(':Brand', $Brand);
     $statement->bindParam(':Price' , $Price);
-    $statement->bindParam(':Price_OnSale', $Price_OnSale); 
     $statement->bindParam(':Stock' , $Stock);
 
     try {
