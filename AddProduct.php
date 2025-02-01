@@ -65,7 +65,7 @@ class AddProduct{
         <input type="text" id="Brand" name="Brand" required><br><br>
 
         <label for="Price">Price:</label><br>
-        <input type="number" id="Price" name="Price" step="0.01" required><br><br>
+        <input type="number" id="Price" name="Price"  required><br><br>
 
         <label for="Price_OnSale">Price on Sale:</label><br>
         <input type="number" id="Price_OnSale" name="Price_OnSale"><br><br>
