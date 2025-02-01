@@ -35,5 +35,4 @@ class Product{
 
     echo "Error:" . $e->getMessage();
   }
-  
-  ?>
+    ?>
