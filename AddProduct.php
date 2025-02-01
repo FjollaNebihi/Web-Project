@@ -1,54 +1,29 @@
 
 <?php
 include_once 'Database.php';
-class AddProduct{
-  public $conn;
-  public $table_name='produktet';
+include_once 'Product.php';
 
-  public function __construct($db){
-    $this->conn=$db;
-  }
-  function getID(){
-    return $this->ProductID;
+if($_SERVER['REQUEST_METHOD']=='POST') {
+  $db= new Database();
+  $connection = $db-> getConnection();
+  $produktet= new Product($connection);
 
-  }
-  function getImage(){
-    return $this->Image;
-  }
-  function getProduct_Name(){
-    return $this->Product_Name;
-  }
+  $Image=$_FILES['Image'];
+  $Product_Name=$_POST['Product_Name'];
+  $Price=$_POST['Price'];
+  $Description=$_POST['Description'];
  
-  function getPrice(){
-    return $this->Price;
-  }
-  function getDescription(){
-    return $this->Description;
-  }
-  public function RegisterAP($Image,$Product_Name,$Price,$Description){
-    $query="INSERT INTO {$this->table_name} (Image,Product_Name,Price,Description) VALUES (:Image, :Product_Name,  :Price , :Description) ";
-    $statement=$this->conn->prepare($query);
 
-    $statement->bindParam(':Image', $Image);
-    $statement->bindParam(':Product_Name', $Product_Name);
-    
-    $statement->bindParam(':Price' , $Price);
-    $statement->bindParam(' :Description', $Description);
-  
-
-    try {
-      if ($statement->execute()) {
-          return true;
-      } else {
-          return false;
-      }
-  } catch (PDOException $e) {
-      echo "Failed to add product: " . $e->getMessage();
-      return false;
+  //regjistrojme produktet dhe i ruhen te dhenat ne databaze
+  if($produktet->RegisterProduct($Image,$Product_Name,$Price,$Description)){
+    header("Location: AdminDashboard.php");
+    exit;
+  }else{
+    echo "Error registering product!";
   }
-}
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="sq">
 <head>

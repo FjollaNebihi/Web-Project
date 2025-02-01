@@ -1,6 +1,6 @@
 <?php
 include_once 'Database.php';
-include_once 'AddProduct.php';
+include_once 'Product.php';
 
 
 class CRUDProduct{

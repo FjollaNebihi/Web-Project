@@ -121,6 +121,11 @@ setInterval(ndrroTekstin, 4000);
         </div>
 
     <div id="container">
+
+
+    /*produket*/??? sdi me bo komente
+
+    
         
         <div id="produktet" class="produkti-1">
             <button class="skin">FOR OILY SKIN</button>

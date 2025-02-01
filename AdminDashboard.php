@@ -1,10 +1,10 @@
 <?php
       
-      
+include_once 'CRUDProduct.php';  
       
 include_once 'UserRepo.php';
 include_once 'Database.php';
-include_once 'CRUDProduct.php';
+
 
 session_start();
 
@@ -159,6 +159,7 @@ a{
   <table border="1">
    
     <tr>
+      <th>ID</th>
       <th>Image</th>
       <th style="width:150px;">Product name</th>
       <th>Price</th>
@@ -172,7 +173,40 @@ a{
 
 
     
-</table>
+
+  <?php
+        include_once 'CRUDProduct.php';
+        $ProductReposition =new CRUDProduct();
+        $produktet= $ProductReposition->getAllProducts();
+
+        foreach($produktet as $produktet){
+          echo
+          "
+           <tr>
+           <td>$produktet[ProductID]</td> <!-- Emri i përdoruesit për hyrje -->
+                <td>$produktet[Image]</td> <!-- ID e përdoruesit -->
+                <td>$produktet[Product_Name]</td> <!-- Emri i përdoruesit -->
+                <td>$produktet[Price]</td> <!-- Mbiemri i përdoruesit -->
+                 <td>$produktet[Description]</td> <!-- Emri i përdoruesit për hyrje -->
+                
+               
+                
+                <td><a href='EditProduct.php?id=$produktet[ProductID]'>Edit</a></td> <!-- Link për redaktim me ID -->
+                <td><a href='DeleteProduct.php?id=$produktet[ProductID]'>Delete</a></td> <!-- Link për fshirje me ID -->
+            
+            </tr>
+            
+          ";
+        }
+        ?>
+  
+    
+
+    </table>
+
+
+
+
   </div>
   <div class="Dashboard-users">
  
