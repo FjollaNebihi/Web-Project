@@ -1,16 +1,20 @@
 <?php
-
-$productID = $_GET['ProductID']; 
-
-
 include_once 'CRUDProduct.php';
 
-$Product = new CRUDProduct();
+if (isset($_GET['ProductID']) && is_numeric($_POST['ProductID'])) {
+    $productId = intval($_GET['ProductID']); // Sanitization
 
+    $ProductRepo = new CRUDProduct();
 
-$Product->deleteProduct($productID);
-
-
-header("location: AdminDashboard.php");
-
+    if ($ProductRepo->deleteProduct($productId)) { // Ensure deletion was successful
+        header("Location: AdminDashboard.php?msg=ProductDeleted");
+        exit();
+    } else {
+        header("Location: AdminDashboard.php?error=DeletionFailed");
+        exit();
+    }
+} else {
+    header("Location: AdminDashboard.php?error=InvalidProductID");
+    exit();
+}
 ?>

@@ -8,20 +8,25 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
   $connection = $db-> getConnection();
   $produktet= new Product($connection);
 
-  $Image=$_FILES['Image'];
   $Product_Name=$_POST['Product_Name'];
   $Price=$_POST['Price'];
   $Description=$_POST['Description'];
- 
 
-  //regjistrojme produktet dhe i ruhen te dhenat ne databaze
-  if($produktet->RegisterProduct($Image,$Product_Name,$Price,$Description)){
+
+  
+  $imageName = $_FILES['Image']['name']; // File name
+    $imageTmpName = $_FILES['Image']['tmp_name']; // Temporary location
+    $imagePath = "img/" . $imageName; // Final path (you can manually copy-paste paths)
+
+    // Move the image
+    move_uploaded_file($imageTmpName, $imagePath);
+
+    // Store only the image path in the database
+    $produktet->RegisterProduct($imagePath, $Product_Name, $Price, $Description);
     header("Location: AdminDashboard.php");
     exit;
-  }else{
-    echo "Error registering product!";
   }
-}
+
 ?>
 
 <!DOCTYPE html>

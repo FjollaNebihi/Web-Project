@@ -66,13 +66,15 @@ class CRUDProduct{
       echo "ERROR" . $this->conn->error;
     }
   }
-  function deleteProduct($ProductID){
-    $conn=$this->connection;
-
-    $sql="DELETE FROM produktet WHERE ProductID=?";
-
-    $statement=$conn->prepare($sql);
-
+  function deleteProduct($ProductID) {
+    $conn = $this->connection;
+  
+  
+    $sql = "DELETE FROM produktet WHERE ProductID=?";
+  
+    $statement = $conn->prepare($sql); 
+  
+   
     $statement->execute([$ProductID]);
     if($statement->execute()){
       echo "<script>alert('Delete was successful');</script>";
@@ -87,5 +89,4 @@ class CRUDProduct{
   
   
   ?>
-  
   

@@ -8,6 +8,9 @@ class Product{
     public function __construct($db){
         $this->conn=$db;
       }
+      function getID(){
+        return $this->ProductID;
+      }
       function getImage(){
         return $this->Image;
       }
