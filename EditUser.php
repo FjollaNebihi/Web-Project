@@ -1,5 +1,11 @@
 <?php
+include_once 'Database.php';
 
+if($_SERVER["REQUEST_METHOD"] ==="POST" && isset($_GET["id"])){
+    $db=new Database();
+
+    $id=$
+}
 
 
 
