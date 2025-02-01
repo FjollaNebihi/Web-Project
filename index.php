@@ -45,7 +45,7 @@ if(!isset($_SESSION['user_id'])){
         background-color: #FF8BA0;
     color:white;
     border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;">
-               You have admin privileges!
+               You have admin privileges !
            </button>
        </a>';
    }
