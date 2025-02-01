@@ -6,7 +6,6 @@ if(!isset($_SESSION['user_id'])){
   exit;
 }
 
-echo "Welcome, " .$_SESSION['username'] . "!";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +18,24 @@ echo "Welcome, " .$_SESSION['username'] . "!";
 <body>
 <div class="header">
     <div class="slider">
+        <button class="admin" >You have admin privileges!</button>
+        <style>
+        .admin{
+            height:30px;width:280px;color:#FFDDE2;background-color: white;
+            margin-left:-940px;
+            margin-right: 20px;
+            border: grey;
+            border-radius: 10px;
+            border-color:4px solid white;
+            color:hotpink;
+            font-size: 13.5px;
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom:-30px;
+            box-shadow: 2px 2px 10px white;
+          
+          }
+        </style>
     <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
 

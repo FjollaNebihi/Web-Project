@@ -22,7 +22,26 @@ echo "Welcome, " .$_SESSION['username'] . "!";
 
 </html>
 <div class="header">
+    <button class="admin" >You have admin privileges!</button>
+      <style>
+      .admin{
+          height:30px;width:280px;color:#FFDDE2;background-color: white;
+          border: grey;
+          border-radius: 10px;
+          border-color:4px solid white;
+          color:hotpink;
+          font-size: 13.5px;
+          font-weight: bold;
+          box-shadow: 2px 2px 10px white;
+          margin-bottom: -10px;
+          margin-top: 6px;
+          margin-left:-935px;
+          margin-right: 20px;
+        
+        }
+      </style>
     <div class="slider">
+
     <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
 
