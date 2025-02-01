@@ -6,7 +6,6 @@ if(!isset($_SESSION['user_id'])){
   exit;
 }
 
-echo "Welcome, " .$_SESSION['username'] . "!";
 ?>
 <!DOCTYPE html>
 <html lang="en">
