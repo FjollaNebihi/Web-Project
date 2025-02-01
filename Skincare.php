@@ -120,142 +120,49 @@ setInterval(ndrroTekstin, 4000);
 
         </div>
 
+
+
+
     <div id="container">
 
 
-    /*produket*/??? sdi me bo komente
+
 
     
-        
-        <div id="produktet" class="produkti-1">
-            <button class="skin">FOR OILY SKIN</button>
-            <img src="img/AHABHA.png" class="image">
-            <p id="description">The Ordinary Peeling Solution</p>
-            <p id="cmimi">$14.00-$20.00</p>
-        </div>
+    <?php 
+include_once 'CRUDProduct.php';  
 
-        <div id="produktet" class="produkti-2">
-            <button class="skin">FOR DRY SKIN</button>
-            <img src="img/B5.png">
-            <p id="description">La Roche Posay B5 Vitamin</p>
-            <p id="cmimi">$20.00</p>
-        </div>
 
-        <div id="produktet" class="produkti-3">
-            <button class="skin">FOR DRY SKIN</button>
-            <img src="img/C.png">
-            <p id="description">La Roche Posay Vitamin C</p>
-            <p id="cmimi">$20.00</p>
-        </div>
+$conn = new mysqli("localhost", "root", "", "bliss");
 
-        <div id="produktet" class="produkti-4">
-            <button class="skin">FOR ACNE</button>
-            <img src="img/Retinol.png">
-            <p id="description">La Roche Posay Retinol B3</p>
-            <p id="cmimi">$24.00-$30.00</p>
-        </div>
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-        <div id="produktet" class="produkti-5">
-            <button class="skin">FOR AGING</button>
-            <img src="img/PHA.png">
-            <p id="description">Some By Mi Miracle Toner</p>
-            <p id="cmimi">$32.00</p>
-        </div>
 
-        <div id="produktet" class="produkti-6">
-            <button class="skin">FOR DRY SKIN</button>
-            <img src="img/SnailMucin.png">
-            <p id="description">COSRX Snail Mucin</p>
-            <p id="cmimi">$19.00-$34.00</p>
-        </div>
+$sql = "SELECT * FROM produktet";  
+$statement = $conn->query($sql);
 
-        <div id="produktet" class="produkti-7">
-            <button class="skin">AGING</button>
-            <img src="img/PaulasChoice.png">
-            <p id="description">2% BHA Liquid Exfoliant</p>
-            <p id="cmimi">$30.00</p>
-        </div>
+if (!$statement) {
+    die("Query failed: " . $conn->error); 
+}
 
-        <div id="produktet" class="produkti-8">
-            <button class="skin">DARK SPOTS</button>
-            <img src="img/Niacinamide.png">
-            <p id="description">The Ordinary Niacinamide 10%+Zinc 1%</p>
-            <p id="cmimi">$14.00-$20.00</p>
-        </div>
+if ($statement->num_rows > 0) {
+    while ($row = $statement->fetch_assoc()) {
+        echo '<div id="produktet">
+                <button class="skin">' . htmlspecialchars($row["Description"]) . '</button>
+                <img src="' . htmlspecialchars($row["Image"]) . '" class="image">
+                <p id="description">' . htmlspecialchars($row["Product_Name"]) . '</p>
+                <p id="cmimi">$' . htmlspecialchars($row["Price"]) . '</p>
+              </div>'; 
+    }
+} else {
+    echo "<p>No products found.</p>";
+}
 
-        <div id="produktet" class="produkti-9">
-            <button class="skin">HYDRATING</button>
-            <img src="img/Oil.png">
-            <p id="description">Beauty of Joseon Cleansing Oil</p>
-            <p id="cmimi">$20.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-10">
-            <button class="skin">FOR DULL SKIN</button>
-            <img src="img/MagicSerum.png">
-            <p id="description">Charlotte's Magic Serum 100ml</p>
-            <p id="cmimi">$76.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-11">
-            <button class="skin">FOR DULL SKIN</button>
-            <img src="img/Caudalie.png">
-            <p id="description">Beauty Elixir</p>
-            <p id="cmimi">$19.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-12">
-            <button class="skin">FOR DRY SKIN</button>
-            <img src="img/Ceravee.png">
-            <p id="description">Cerave Hydrating Toner</p>
-            <p id="cmimi">$16.00-$28.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-13">
-            <button class="skin">ACNE SCARS</button>
-            <img src="img/Centella.png">
-            <p id="description">Centella Brightening Capsule</p>
-            <p id="cmimi">$34.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-14">
-            <button class="skin">DARK SPOTS</button>
-            <img src="img/Beauty.png">
-            <p id="description">Beauty of Joseon Eye Serum</p>
-            <p id="cmimi">$23.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-15">
-            <button class="skin">FOR OILY SKIN</button>
-            <img src="img/Glycolic.png">
-            <p id="description">The Ordinary Glycolic Acid 7%</p>
-            <p id="cmimi">$18.00-$27.00</p>
-        </div>
-
-        <div id="produktet" class="produkti-16">
-            <button class="skin">HYDRATING</button>
-            <img src="img/SPF.png">
-            <p id="description">I'm From Rice Toner</p>
-            <p id="cmimi">$24.00</p>
-        </div>
-    </div>
-
-    <div id="skincare">
-        <div class="ordinary-container">
-            <img src="img/TheOrdinary.png" alt="The Ordinary" class="ordinary-image">
-            <div class="ordinary-content">
-                <h3 class="ordinary-title">Skincare Beyond Routine</h3>
-                <p class="ordinary-text">Schedule an appointment with our professional team to discover personalized solutions.</p>
-                <button class="appointment-button">Book Now</button>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
-</body>
+$conn->close();
+?>
+    </body>
 <footer class="footer">
     <div class="footer-links">
         <a href="/terms" class="footer-link">Terms of Service</a>

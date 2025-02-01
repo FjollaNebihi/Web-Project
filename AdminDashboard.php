@@ -60,7 +60,7 @@ if($_SESSION['role'] === 'User'){
   display: flex;
   height:40px;
   background-color: #FFDDE2;
-  margin-top:30px;
+  margin-top:700px;
   padding-top:0px;
   flex-direction: column;
   margin-right:40px;
