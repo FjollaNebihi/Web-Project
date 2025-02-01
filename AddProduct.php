@@ -8,6 +8,10 @@ class AddProduct{
   public function __construct($db){
     $this->conn=$db;
   }
+  function getID(){
+    return $this->ProductID;
+
+  }
   function getImage(){
     return $this->Image;
   }
@@ -19,11 +23,6 @@ class AddProduct{
   }
   function getPrice(){
     return $this->Price;
-  }
-  function getStock(){
-    return $this->Stock;
-  
-    
   }
   public function RegisterAP($Image,$Product_Name,$Brand,$Price,$Stock){
     $query="INSERT INTO {$this->table_name} (Image,Product_Name,Brand,Price,Stock) VALUES (:Image, :Product_Name, :Brand, :Price, :Stock) ";
