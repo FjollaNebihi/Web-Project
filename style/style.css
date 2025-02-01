@@ -120,6 +120,9 @@ p{
 .button:hover{
   box-shadow:10px 10px 10px #FF7084;
 }
+.button-1:hover{
+  box-shadow:10px 10px 10px #FF7084;
+}
 
 .account{
   display: flex;
@@ -130,12 +133,12 @@ p{
 }
 
 
-.sign-up, .log-in{
-  height: 30px;
-  width: 250px;
-  background-color: white;
-  border-radius: 10px;
-}
+.sign-up,.log-in{
+  height:30px;
+  width:105px;
+  font-size:12px;
+  margin-right: -7px;
+  }
 
 html, body {
   height: 100%;
@@ -358,33 +361,4 @@ display: inline-block;
 
 
 @media screen and (max-width: 480px){
-  container-2 {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap:wrap;
-    height:120px;
-    gap:7px;
-    width:100%;
-    
-
-
-  }
-  .button, .button-sale,.button-1  {
-    width:100px;
-
-  }
-  .button-2{
-    width:60%;
-    margin-left:4px;
-  }
-  .button-gift{
-    width:115px;
-    padding-top:2px;
-  }
-  #container {
-    flex-direction: column;
-    align-items: center;
-    
-}
-}
-
+ 
