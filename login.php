@@ -11,6 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   $username=$_POST['username'];
   $password=$_POST['password'];
+  $role=$_POST['role'];
 
   $user->LogIn($username, $password);
 
@@ -19,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if($_SESSION['role'] === 'Admin'){
         header("Location:index.php");
   } else {
-      header("Location: index.php"); 
+      header("Location:index.php"); 
   }
   exit();
 } else {

@@ -4,6 +4,7 @@
       
 include_once 'UserRepo.php';
 include_once 'Database.php';
+// include_once 'CRUDProduct.php';
 
 session_start();
 
@@ -160,7 +161,6 @@ a{
     <tr>
       <th>Image</th>
       <th style="width:150px;">Product name</th>
-      <th>Brand</th>
       <th>Price</th>
   
       <th class="edit"> <a href="edit.html">Edit Product</a></th>
