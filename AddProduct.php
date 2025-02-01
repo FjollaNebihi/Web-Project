@@ -24,15 +24,15 @@ class AddProduct{
   function getPrice(){
     return $this->Price;
   }
-  public function RegisterAP($Image,$Product_Name,$Brand,$Price,$Stock){
-    $query="INSERT INTO {$this->table_name} (Image,Product_Name,Brand,Price,Stock) VALUES (:Image, :Product_Name, :Brand, :Price, :Stock) ";
+  public function RegisterAP($Image,$Product_Name,$Brand,$Price){
+    $query="INSERT INTO {$this->table_name} (Image,Product_Name,Brand,Price) VALUES (:Image, :Product_Name, :Brand, :Price) ";
     $statement=$this->conn->prepare($query);
 
     $statement->bindParam(':Image', $Image);
     $statement->bindParam(':Product_Name', $Product_Name);
     $statement->bindParam(':Brand', $Brand);
     $statement->bindParam(':Price' , $Price);
-    $statement->bindParam(':Stock' , $Stock);
+  
 
     try {
       if ($statement->execute()) {
