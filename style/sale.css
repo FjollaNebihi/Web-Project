@@ -51,6 +51,7 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     padding-top:20px;
+    
   
   }
   #produktet{
@@ -272,6 +273,7 @@
   
 
   .footer {
+    position: relative;
     background-color:#ff8ca4;
     color: white;
     text-align: center;
@@ -291,17 +293,7 @@
   }
 
 
-  .slider-button{
-    margin-right:-420px;
-    background-color:#ffffff;
-  border:1.5px solid #FF8BA0;
-  color:#FF7084;
-    border-radius: 7px;
-    margin-top:260px;
-    margin-bottom: -8px;
-    width:90px;
-    height: 22px;
-  }
+  
 
 
   #slideshow{
@@ -316,8 +308,8 @@
   .slider-button{
     margin-right:-420px;
     background-color:#ffffff;
-  border:1.5px solid #FF8BA0;
-  color:#FF7084;
+  border:1.5px solid red;
+  color:red;
     border-radius: 7px;
     margin-top:260px;
     margin-bottom: -8px;
@@ -337,8 +329,8 @@
   .slider-btn{
     margin-right:-420px;
     background-color:#ffffff;
-    border:1.5px solid #FF8BA0;
-    color:#FF7084;
+    border:1.5px solid ;
+    color:red;
     border-radius: 7px;
     margin-top:260px;
     margin-bottom: -8px;

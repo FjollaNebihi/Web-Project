@@ -71,6 +71,7 @@ function updateUser($id, $first_name, $last_name,  $username,$email,$role, $pass
   
   echo "<script>alert('Update was successful');</script>";
 }
+
 function deleteUser($id) {
   $conn = $this->connection;
 

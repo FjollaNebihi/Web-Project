@@ -95,7 +95,15 @@ setInterval(ndrroTekstin, 4000);
       <button id="button">BEST SELLER</button>
       <button id="button-2">ADD TO FAVORITES</button>
       <img src="img/HudaPowder.png" alt="Small Image" class="small-image" id="slideshow">
-      <button onclick="ndrroImg()" class="slider-button">See more</button>
+      <button onclick="ndrroImg()" style="   margin-right:-420px;
+                        background-color:#ffffff;
+                       border:1px solid #FF8BA0;
+  color:#FF7084;;
+                        border-radius: 7px;
+                        margin-top:260px;
+                        margin-bottom: -8px;
+                        width:90px;
+                        height: 22px;">...see more</button>
       <p id="text">Easy Bake Loose Baking & Setting Powder</p>
       <p id="cmimi">$38.00</p></div>
       
@@ -211,8 +219,17 @@ setInterval(ndrroTekstin, 4000);
 
 
 
-  <footer class="footer">
-    <div class="footer-links">
+ 
+
+</body>
+</html>
+<footer class="footer" style="   position: relative;
+    background-color:#ff8ca4;
+    color: white;
+    text-align: center;
+    padding: px;
+    width: 100%,padding:0,margin:0;">
+    <div class="footer-links" style=" margin-bottom: 20px;">
         <a href="/terms" class="footer-link">Terms of Service</a>
         <span>|</span>
         <a href="/privacy" class="footer-link">Privacy Policy</a>
@@ -221,6 +238,3 @@ setInterval(ndrroTekstin, 4000);
     </div>
     <p>© 2024 My Website. All rights reserved.</p>
 </footer>
-
-</body>
-</html>

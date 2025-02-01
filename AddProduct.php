@@ -1,7 +1,8 @@
 qetu e bon njejt si te register form qe kur te shkruhen tdhenat dalin direkt ndatabaze
 <?php
 include_once 'AddProduct.php';
-class Product1{
+include_once 'Database.php';
+class AddProduct{
   public $conn;
   public $table_name='produktet';
 

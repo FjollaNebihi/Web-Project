@@ -113,12 +113,13 @@ document.body.addEventListener('load',FotoTjeter());
 </style>
 
 </head>
-</body>
+<body>
 
 <div class="header">
     <div class="slider">
     <p id="slider-text" class="text">Check out this month's best selling products!</p>
     </div>
+</div>
 
     <script>
       const teksti=[
@@ -239,7 +240,15 @@ setInterval(ndrroTekstin, 4000);
             <div id="produktet" class="product2">
                 <button id="button">ON SALE</button>
                         <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
-                        <button onclick="FotoTjeter()" class="slider-button">...see more</button>
+                        <button onclick="ndrroImg()" style="   margin-right:-420px;
+                        background-color:#ffffff;
+                      border:1.5px solid red;
+                      color:red;
+                        border-radius: 7px;
+                        margin-top:260px;
+                        margin-bottom: -8px;
+                        width:90px;
+                        height: 22px;">...see more</button>
                         <p id="text">Rhode Peptide Lip Tint- Espresso</p>
                         <p id="cmimi">$23.00.</p>
                     </div>
@@ -281,7 +290,15 @@ setInterval(ndrroTekstin, 4000);
 
             <button id="button">ON SALE</button>
             <img src="img/2faced.jpeg" alt="Small Image" class="small-image" id="slider">
-              <button onclick="ndrroImg()" class="slider-btn">...see more</button>
+              <button onclick="FotoTjeter()" class="slider-button" style="   margin-right:-420px;
+              background-color:#ffffff;
+            border:1.5px solid red;
+            color:red;
+              border-radius: 7px;
+              margin-top:260px;
+              margin-bottom: -8px;
+              width:90px;
+              height: 22px;">...see more</button>
             <p id="text">Too Faced-Cloud Clush Blush</p>
             <p id="cmimi">$23.60</p>
 
@@ -295,20 +312,21 @@ setInterval(ndrroTekstin, 4000);
 
           
 
-            <footer class="footer">
-                <div class="footer-links">
-                    <a href="/terms" class="footer-link">Terms of Service</a>
-                    <span>|</span>
-                    <a href="/privacy" class="footer-link">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="/contact" class="footer-link">Contact us</a>
-                </div>  
-                
-                <p>© 2024 My Website. All rights reserved.</p>
-              </footer>
+         
             
-            </head>
+           
             </body>
+            <footer class="footer">
+              <div class="footer-links">
+                  <a href="/terms" class="footer-link">Terms of Service</a>
+                  <span>|</span>
+                  <a href="/privacy" class="footer-link">Privacy Policy</a>
+                  <span>|</span>
+                  <a href="/contact" class="footer-link">Contact us</a>
+              </div>  
+              
+              <p>© 2024 My Website. All rights reserved.</p>
+            </footer>
 
 
 
