@@ -19,23 +19,21 @@ class Product{
         $statement->bindParam(':Price_OnSale', $Price_OnSale);
         $statement->bindParam(':Stock', $Stock);
 
-        $statement=$this->conn->prepare($query);
-        $statement->bindParam(':username', $username);
+      
         $statement->execute();
         
   
-        if($statement->rowCount() > 0){
-          $row=$statement->fetch(PDO::FETCH_ASSOC);
-          if(password_verify($password,$row['password'])){
-            //Fillon nje session
-            session_start();
-            $_SESSION['user_id']=$row['id'];
-            $_SESSION['username']=$row['username'];
-            return true;
-          }
-        }
-        return false;
-      } 
+        if ($statement->execute()) {
+          
+          $this->conn = null;
+          echo "Produkt i regjistruar me sukses.";
+
+      } else {
+          echo "Ka ndodhur një gabim gjatë regjistrimit të produktit.";
+      }
+  } catch (PDOException $e) {
+
+    echo "Error:" . $e->getMessage();
   }
   
   ?>
