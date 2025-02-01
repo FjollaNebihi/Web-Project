@@ -162,11 +162,10 @@ a{
       <th style="width:150px;">Product name</th>
       <th>Brand</th>
       <th>Price</th>
-      <th style="width:180px;">Price on sale</th>
-      <th>Stock</th>
+  
       <th class="edit"> <a href="edit.html">Edit Product</a></th>
       <th class="delete">Delete Product</th> 
-      <th class="edit"><a href="AddProduct.html">Add Product</a></th>
+      <th class="edit"><a href="AddProduct.php">Add Product</a></th>
   </tr>
 
 
@@ -188,7 +187,7 @@ a{
         <th>Email</th>
         <th>Role</th>
        
-        <th class="edit"> <a href="Edit.php">Edit</a></th>
+        <th class="edit"> <a href="EditUser.php">Edit</a></th>
         <th class="delete">Delete</th> 
         <th>Password</th>
        
@@ -211,7 +210,7 @@ a{
                 
                
                 
-                <td><a href='Edit.php?id=$user[id]'>Edit</a></td> <!-- Link për redaktim me ID -->
+                <td><a href='EditUser.php?id=$user[id]'>Edit</a></td> <!-- Link për redaktim me ID -->
                 <td><a href='DeleteUser.php?id=$user[id]'>Delete</a></td> <!-- Link për fshirje me ID -->
                 <td>$user[password]</td> <!-- Email-i i përdoruesit -->
             </tr>

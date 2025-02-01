@@ -67,11 +67,8 @@ class AddProduct{
         <label for="Price">Price:</label><br>
         <input type="number" id="Price" name="Price" step="0.01" required><br><br>
 
-        <label for="Price_OnSale">Price on Sale:</label><br>
-        <input type="number" id="Price_OnSale" name="Price_OnSale"><br><br>
 
-        <label for="Stock">Stock:</label><br>
-        <input type="number" id="Stock" name="Stock" required><br><br>
+        
 
         <label for="Image">Image:</label><br>
         <input type="file" id="Image" name="Image" accept="image/*" required><br><br>
