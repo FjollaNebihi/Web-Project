@@ -194,20 +194,27 @@ display: inline-block;
 
 
 .welcome-container{
-  text-align: left;
+ 
   font-family:"Cinzel", serif;
-}
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+ 
+  }
+  
+
 
 .welcome-container h3 {
   font-size: 22px;
   font-style: normal;
-  margin-bottom: 5px;
+
 }
 
 .welcome-container h1 {
   font-size: 2em; 
   font-style: italic;
-  margin-bottom: 15px;
+ 
 }
 
 .tagline {
@@ -215,40 +222,9 @@ display: inline-block;
   text-align: left;
   color: #4F4F4F;
   font-style:normal;
-  margin-top: 0; 
-  margin-bottom: 0;
+ 
 }
 
-
-.btn{
-  font-size:13px;
-  color:white;
-  width: 115px;
-  height:32px;
-  border-radius:15px; 
-  border:2px solid red;
-  background-color: red;
-  margin-bottom: 100px;
-}
-
-.btn:hover{
-  background-color: darkred;
-  text-decoration: underline;
-}
-
-.bests{
-  font-size:13px;
-  width: 170px;
-  height:35px;
-  border-radius:15px; 
-  border: 2px solid pink;
-  background-color: white;
-}
-
-.bests:hover {
-  background-color:#ff8ca4; 
-  text-decoration: underline;
-}
 
 
 .footer {
@@ -291,6 +267,7 @@ display: inline-block;
 
 }
 
+
 @media screen and (max-width: 767px){
   .bliss {
     font-size: 25px;
@@ -317,16 +294,7 @@ display: inline-block;
     background-color:FF3256 ;
     height:75px ;
     }
-    .bests{
-      font-size:12px;
-      width: 140px;
-      height:30px;
-  }
-  .btn{
-    font-size:12px;
-    width: 95px;
-    height:27px;
-  }
+    
   .sign-up,.log-in{
   height:25px;
   width:95px;

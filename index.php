@@ -137,18 +137,23 @@ setInterval(ndrroTekstin, 4000);
   </div>
   
   <div class="content">
+
 </div>
 <div class="welcome-container">
   <h3>Clean beauty • Cruelty Free</h3>
   <h1>Enhance Your Natural Beauty</h1>
   <p class="tagline">From foundations that do more to effortlessly expressive colour. Explore the possibilities.</p>
 </div>
+<style>
+  .welcome-container{
+  font-family:"Cinzel", serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+  }
+</style>
 
-<div class="button-container">
-
-  <a href="bestsellers.php"><button class="bests">shop our best sellers</button></a>
-  <button class="btn">shop now</button>
-</div>
 
 
 <footer class="footer">

@@ -288,7 +288,7 @@ setInterval(ndrroTekstin, 4000);
                         margin-bottom: -8px;
                         width:90px;
                         height: 22px;">...see more</button>
-                        <p id="text">Rhode Peptide Lip Tint- Espresso</p>
+                        <p id="text">Rhode Peptide Lip Tints</p>
                         <p id="cmimi">$23.00.</p>
                     </div>
                     
@@ -338,7 +338,7 @@ setInterval(ndrroTekstin, 4000);
               margin-bottom: -8px;
               width:90px;
               height: 22px;">...see more</button>
-            <p id="text">Too Faced-Cloud Clush Blush</p>
+            <p id="text">Too Faced Blush Shades</p>
             <p id="cmimi">$23.60</p>
 
                     

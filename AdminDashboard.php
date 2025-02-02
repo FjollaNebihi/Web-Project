@@ -113,26 +113,29 @@ a{
 
 }
 .admin{
-  height:40px;width:330px;color:#FFDDE2;background-color: white;
+  height:40px;width:300px;color:#FFDDE2;background-color: white;
   margin-left:600px;
+  border-radius:7px;
   border-color:4px solid white;
   color:hotpink;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight:bold;
   margin-top: 30px;
   margin-bottom:-30px;
   box-shadow: 2px 2px 10px white;
-
+ 
 }
 .add{
-  height:40px;width:195px;color:#FFDDE2;background-color: white;
+  height:40px;width:185px;color:#FFDDE2;background-color: white;
   margin-left:660px;
   border-color:4px solid white;
   color:hotpink;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight:bold;
   margin-top: 30px;
   margin-bottom:-30px;
   box-shadow: 2px 2px 10px white;
-  border-radius:5px;
+  border-radius:7px;
   text-decoration:none;
 
 }
