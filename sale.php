@@ -278,19 +278,9 @@ setInterval(ndrroTekstin, 4000);
 
             <div id="produktet" class="product2">
                 <button id="button">ON SALE</button>
-                        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
-                        <button onclick="ndrroImg()" style="   margin-right:-420px;
-                        background-color:#ffffff;
-                      border:1.5px solid red;
-                      color:red;
-                        border-radius: 7px;
-                        margin-top:260px;
-                        margin-bottom: -8px;
-                        width:90px;
-                        height: 22px;">...see more</button>
-                        <p id="text">Rhode Peptide Lip Tints</p>
-                        <p id="cmimi">$23.00.</p>
-                    </div>
+                <img src="img/CTBronzer.png" alt="Small">
+                        <p id="text">Hollywood Contour Wand</p>
+                        <p id="cmimi">$46.00</p></div>
                     
         <div id="produktet" class="product2">
             <button id="button">ON SALE</button>
@@ -328,18 +318,12 @@ setInterval(ndrroTekstin, 4000);
             <div class="swiper-button-prev"></div>
 
             <button id="button">ON SALE</button>
-            <img src="img/2faced.jpeg" alt="Small Image" class="small-image" id="slider">
-              <button onclick="FotoTjeter()" class="slider-button" style="   margin-right:-420px;
-              background-color:#ffffff;
-            border:1.5px solid red;
-            color:red;
-              border-radius: 7px;
-              margin-top:260px;
-              margin-bottom: -8px;
-              width:90px;
-              height: 22px;">...see more</button>
-            <p id="text">Too Faced Blush Shades</p>
-            <p id="cmimi">$23.60</p>
+            <img src="img/FentyGloss.png" alt="Small">
+              <p id="text">Gloss Bomb Lip Luminizer</p>
+          <p id="cmimi">$21.00</p></div>
+  </div>
+
+           
 
                     
                 </div>

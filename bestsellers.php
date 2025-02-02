@@ -137,7 +137,7 @@ setInterval(ndrroTekstin, 4000);
       <button onclick="ndrroImg()" style="   margin-right:-420px;
                         background-color:#ffffff;
                        border:1px solid #FF8BA0;
-  color:#FF7084;;
+                        color:#FF7084;
                         border-radius: 7px;
                         margin-top:260px;
                         margin-bottom: -8px;
@@ -183,9 +183,21 @@ setInterval(ndrroTekstin, 4000);
    
       <div id="produktet"class="produkti-6"><button id="button">BEST SELLER</button>
         <button id="button-2">ADD TO FAVORITES</button>
-        <img src="img/CTBronzer.png" alt="Small Image" class="small-image4">
-        <p id="text">Hollywood Contour Wand</p>
-        <p id="cmimi">$46.00</p></div>
+        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
+                        <button onclick="nFotoTjeter()" style="   margin-right:-420px;
+                        background-color:#ffffff;
+                        border:1px solid #FF8BA0;
+                        color:#FF7084;
+                        border-radius: 7px;
+                        margin-top:260px;
+                        margin-bottom: -8px;
+                        width:90px;
+                        height: 22px;">...see more</button>
+                        <p id="text">Rhode Peptide Lip Tints</p>
+                        <p id="cmimi">$23.00.</p>
+                        
+                    </div>
+        
       
     
       <div id="produktet"class="produkti-7"><button id="button">BEST SELLER</button>
@@ -251,12 +263,21 @@ setInterval(ndrroTekstin, 4000);
 
         <div id="produktet"class="produkti-16"><button id="button">BEST SELLER</button>
           <button id="button-2">ADD TO FAVORITES</button>
-          <img src="img/FentyGloss.png" alt="Small Image" class="small-image2">
-          <p id="text">Gloss Bomb Lip Luminizer</p>
-          <p id="cmimi">$21.00-$24.00</p></div>
-  </div>
-
-
+          <img src="img/2faced2.png" alt="Small Image" class="small-image" id="slideshow">
+          <button onclick="FotoTjeter()"  style=" margin-right:-420px;
+              background-color:#ffffff;
+            border:1px solid #FF8BA0;
+            color:#FF7084;
+              border-radius: 7px;
+              margin-top:260px;
+              margin-bottom: -8px;
+              width:90px;
+              height: 22px;">...see more</button>
+            <p id="text">Too Faced Blush Shades</p>
+            <p id="cmimi">$23.60</p>
+                <p id="text">Too Faced Blush Shades</p>
+                <p id="cmimi">$23.60</p>
+                </div>
 
 
  
