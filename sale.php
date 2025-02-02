@@ -131,113 +131,57 @@ setInterval(ndrroTekstin, 4000);
 
         <div id="container">
 
+ 
+        <?php 
+include_once 'CRUDProduct.php';  
 
 
-<div id="produktet" class="product1">
-    <button id="button">ON SALE</button>
-    <img src="img/mario_ethereal.png" alt="Small">
-    <p id="text">Mario-Ethereal Eyes Palette</p>
-    <p id="cmimi">$48.00</p>
-</div>
-    <div id="produktet" class="product2">
-        <button id="button">ON SALE</button>
-        <img src="img/SK-II.png" alt="Small">
-        <p id="text">SK-II Pitera Essence Set</p>
-        <p id="cmimi">$80.00</p>
-    </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/ConclearDior.jpeg" alt="Small">
-            <p id="text">Dior-Backstage Flash Perfector Concealer</p>
-            <p id="cmimi">$33.00</p>
-        </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/FentyMascara.png" alt="Small">
-            <p id="text">Fenty-Mascara Hella Thicc</p>
-            <p id="cmimi">$30.45</p>
-        </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/RhodeBlush.jpeg" alt="Small">
-            <p id="text">Rhode Pocket Blush-Sleepy Girl</p>
-            <p id="cmimi">$18.00</p>
-        </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/Kiko.png" alt="Small">
-            <p id="text">Kiko-3d Hydra Lipgloss Shade 17</p>
-            <p id="cmimi">$17.50</p>
-        </div>
+$conn = new mysqli("localhost", "root", "", "bliss");
 
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/GlossDrip.jpeg" alt="Small">
-            <p id="text">Kylie Cosmetics-Gloss Drip</p>
-            <p id="cmimi">$15.50</p>
-            </div>
-            
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/RareBlush.png" alt="Small">
-            <p id="text">Rare Beauty Blush-Shade Hope</p>
-            <p id="cmimi">$22.00</p>
-            </div>
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/Loreal-makeupset.png" alt="Small">
-            <p id="text">Loreal Makeup Set</p>
-            <p id="cmimi">$57.00</p>
-            </div>
 
-            <div id="produktet" class="product2">
-                <button id="button">ON SALE</button>
-                <img src="img/CTBronzer.png" alt="Small">
-                        <p id="text">Hollywood Contour Wand</p>
-                        <p id="cmimi">$46.00</p></div>
-                    
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/kkwbeauty.png" alt="Small">
-            <p id="text">KKW Beauty-Body Makeup</p>
-            <p id="cmimi">$55.00</p>
-            </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/Laneige.png" alt="Small">
-            <p id="text"> Laneige Lip Balm-Gummy Bear</p>
-            <p id="cmimi">$35.20</p>
-        </div>
-        <div id="produktet" class="product2">
-                    <button id="button">ON SALE</button>
-                    <img src="img/eyecream.png" alt="Small">
-                    <p id="text">KylieSkin-Eyecream</p>
-                    <p id="cmimi">$26.00</p>
-        </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/LipDuoSet.png" alt="Small">
-            <p id="text">Laneige Divine Lip Duo Set</p>
-            <p id="cmimi">$34.70</p>
-        </div>
-        <div id="produktet" class="product2">
-            <button id="button">ON SALE</button>
-            <img src="img/DElephant.png" alt="Small">
-            <p id="text">Drunk Elephant The Littles Kit</p>
-            <p id="cmimi">$40.20</p>
-        </div>
-        <div id="produktet" class="product2">
+$sql = "SELECT * FROM produktet ORDER BY ProductID ASC LIMIT 16 ";  
+$statement = $conn->query($sql);
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
-            <button id="button">ON SALE</button>
-            <img src="img/FentyGloss.png" alt="Small">
-              <p id="text">Gloss Bomb Lip Luminizer</p>
-          <p id="cmimi">$21.00</p></div>
-  </div>
 
+if (!$statement) {
+    die("Query failed: " . $conn->error); 
+}
+
+if ($statement->num_rows > 0) {
+    while ($row = $statement->fetch_assoc()) {
+        echo '<div id="produktet">
+                <button id="button">' . htmlspecialchars($row["Description"]) . '</button>
+                <img src="' . htmlspecialchars($row["Image"]) . '" class="image">
+                <p id="text">' . htmlspecialchars($row["Product_Name"]) . '</p>
+                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>';
+          if ($_SESSION['role'] === 'Admin') {
+            echo '<button style=" margin-bottom:255px;
+  margin-left:190px;
+  border-radius:10px;
+  height:30px;
+  width:150px;
+  background-color:#ffffff;
+  border:1px solid red;
+  width:100px;
+  font-weight: bold;
+  font-size:12px;
+  position: absolute;
+  color:#FF8BA0;">Created By: ' . htmlspecialchars($row["Created_By"]) . '</button>';
+        }
+
+        echo '</div>'; 
+    }
+} else {
+    echo "No products found.";
+}
+
+$conn->close();
+?>
            
 
                     
