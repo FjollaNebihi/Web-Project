@@ -8,6 +8,8 @@ include_once 'Database.php';
 
 session_start();
 
+
+
 if(!isset($_SESSION['user_id'])){
   header("Location:login.php");
   exit;
@@ -60,7 +62,7 @@ if($_SESSION['role'] === 'User'){
   display: flex;
   height:40px;
   background-color: #FFDDE2;
-  margin-top:700px;
+  margin-top:1015px;
   padding-top:0px;
   flex-direction: column;
   margin-right:40px;
@@ -196,7 +198,8 @@ a{
                 
                 <td><a href='EditProduct.php?id=$produktet[ProductID]'>Edit</a></td> <!-- Link për redaktim me ID -->
                 <td><a href='DeleteProduct.php?id=$produktet[ProductID]'>Delete</a></td> <!-- Link për fshirje me ID -->
-            
+                <td>$produktet[Created_By]</td> <!-- Emri i përdoruesit për hyrje -->
+               
             </tr>
             
           ";

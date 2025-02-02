@@ -1,20 +1,22 @@
-<?php
+<?php 
+include_once 'Database.php';
+include_once 'Product.php';
+
+$conn = new mysqli("localhost", "root", "", "bliss");
+
+
+
+$prod_id = $_GET['id'];
+
+
+
 include_once 'CRUDProduct.php';
 
-if (isset($_GET['ProductID']) && is_numeric($_POST['ProductID'])) {
-    $productId = intval($_GET['ProductID']); // Sanitization
+$Delete = new CRUDProduct();
 
-    $ProductRepo = new CRUDProduct();
 
-    if ($ProductRepo->deleteProduct($productId)) { // Ensure deletion was successful
-        header("Location: AdminDashboard.php?msg=ProductDeleted");
-        exit();
-    } else {
-        header("Location: AdminDashboard.php?error=DeletionFailed");
-        exit();
-    }
-} else {
-    header("Location: AdminDashboard.php?error=InvalidProductID");
-    exit();
-}
+$Delete->deleteProduct($prod_id);
+
+
+header("location: AdminDashboard.php");
 ?>

@@ -64,12 +64,22 @@ class User{
           $_SESSION['user_id']=$row['id'];
           $_SESSION['username']=$row['username'];
           $_SESSION['role']=$row['role'];
+          $_SESSION['id']=$row['id'];
 
           return true;
         }
       }
       return false;
     } 
-}
+    public function isLoggedIn() {
+      return isset($_SESSION['username']);
+      return isset($_SESSION['id']);
+  }
 
+  public function logout() {
+      session_start();
+      session_destroy();
+      return "Logged out successfully.";
+  }
+}
 ?>

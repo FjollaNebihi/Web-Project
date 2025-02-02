@@ -24,8 +24,11 @@ class Product{
       function getDescription(){
         return $this->Description;
       }
-      public function RegisterProduct($Image, $Product_Name, $Price,$Description){
-        $query ="INSERT INTO {$this->table_name} (Image, Product_Name, Price, Description) VALUES (:Image, :Product_Name, :Price, :Description)";
+      function getCreated(){
+        return $this->Created_By;
+      }
+      public function RegisterProduct($Image, $Product_Name, $Price,$Description,$Created_By){
+        $query ="INSERT INTO {$this->table_name} (Image, Product_Name, Price, Description, Created_By) VALUES (:Image, :Product_Name, :Price, :Description, :Created_By)";
         $statement=$this->conn->prepare($query);
 
         $statement->bindParam(':Image', $Image);
@@ -33,6 +36,8 @@ class Product{
       
         $statement->bindParam(':Price', $Price);
         $statement->bindParam(':Description', $Description);
+        $statement->bindParam(':Created_By', $Created_By);
+
 
       
         

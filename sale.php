@@ -18,99 +18,14 @@ if(!isset($_SESSION['user_id'])){
     <title> SALE | BLISS </title>
 
     <link rel="stylesheet" href="style/sale.css">
-    <script src="script/Slideri2.js">
-      var i=0;
-var imgArray=[
- "img/R (1).png",
- "img/R (2).png",
- "img/R.png",
- "img/R (3).png"
-];
 
-function ndrroImg(){
-  document.getElementById('slideshow').src=imgArray[i];
-  if(i < imgArray.length -1){
-    i++;
-  }else{
-    i=0;
- 
-  }
-}
-document.body.addEventListener('load',ndrroImg());
-    </script>
- 
- <style>
- .slider-button{
-  margin-right:-420px;
-  background-color:#ffffff;
-border:1.5px solid #FF8BA0;
-color:#FF7084;
-  border-radius: 7px;
-  margin-top:260px;
-  margin-bottom: -8px;
-  width:90px;
-  height: 22px;
-}
-
-
-#slideshow{
-  width:235px;
-  height:auto;
-  margin-top:20px;
-  margin-bottom:50px;
-  margin-right:-59px;
-  margin-left:20px;
-}
  </style>
 
 
 </head>
 <body>
 
-<script src="script/Slideri3.js">
-  var i=0;
-var imagesArray=[
-"img/2faced.jpeg",
-"img/OIP.jpg",
-"img/O2jpg.jpg",
-"img/OIP3.png"
-];
 
-function FotoTjeter(){
-  document.getElementById('slider').src=imagesArray[i];
-  if(i < imagesArray.length -1){
-    i++;
-  }else{
-    i=0;
- 
-  }
-}
-document.body.addEventListener('load',FotoTjeter());
-</script>
-
-
-<style>
-  #slider{
-    width:225px;
-    height:auto;
-    margin-top:20px;
-    margin-bottom:50px;
-    margin-right:-59px;
-    margin-left:30px;
-  }
-
-  .slider-btn{
-    margin-right:-420px;
-    background-color:#ffffff;
-  border:1.5px solid #FF8BA0;
-  color:#FF7084;
-    border-radius: 7px;
-    margin-top:260px;
-    margin-bottom: -8px;
-    width:90px;
-    height: 22px;
-  }
-</style>
 
 </head>
 <body>
@@ -341,7 +256,7 @@ setInterval(ndrroTekstin, 4000);
                     <span>|</span>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <span>|</span>
-                    <a href="/contact" class="footer-link">Contact us</a>
+                    <a href="ContactUs.php" class="footer-link">Contact us</a>
                 </div>  
                 
                 <p>© 2024 My Website. All rights reserved.</p>

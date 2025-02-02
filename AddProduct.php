@@ -11,6 +11,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
   $Product_Name=$_POST['Product_Name'];
   $Price=$_POST['Price'];
   $Description=$_POST['Description'];
+  $Created_By=$_POST['Created_By'];
 
 
   
@@ -22,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     move_uploaded_file($imageTmpName, $imagePath);
 
 
-    $produktet->RegisterProduct($imagePath, $Product_Name, $Price, $Description);
+    $produktet->RegisterProduct($imagePath, $Product_Name, $Price, $Description,$Created_By);
     header("Location: AdminDashboard.php");
     exit;
   }
@@ -49,6 +50,9 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
         <label for="Description">Description:</label><br>
         <input type="text" id="Description" name="Description"  required><br><br>
+
+        <label for="Created_By">Created By:</label><br>
+        <input type="text" id="Created_By" name="Created_By"  required><br><br>
 
 
         

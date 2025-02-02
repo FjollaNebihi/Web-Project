@@ -1,9 +1,10 @@
 <?php
+
 session_start();
 
 
 if(!isset($_SESSION['user_id'])){
-  header("Location:login.php");
+  header("Location: login.php");
   exit;
 }
 
@@ -151,7 +152,7 @@ setInterval(ndrroTekstin, 4000);
   <p class="tagline">From foundations that do more to effortlessly expressive colour. Explore the possibilities...</p>
 
   <a href="AboutUs.html">
-  <button style="font-size:14px; font-weight:bold; width: 135px; height: 30px; border-radius: 15px; background-color: #ffffff; color: #FF8BA0; border: none; box-shadow: 2px 2px 2px black; margin-top:10px;">About us</button>
+  <button style="font-size:14px; font-weight:bold; width: 135px; height: 30px; border-radius: 15px; background-color: #ffffff; color: #FF8BA0; border: none; box-shadow: 2px 2px 2px black; margin-top:10px;margin-left:5px;">About us</button>
   </a>
 </div>
 
@@ -173,7 +174,7 @@ setInterval(ndrroTekstin, 4000);
       <span>|</span>
       <a href="/privacy" class="footer-link">Privacy Policy</a>
       <span>|</span>
-      <a href="/contact" class="footer-link">Contact us</a>
+      <a href="ContactUs.php" class="footer-link">Contact us</a>
   </div>
   <p>© 2024 My Website. All rights reserved.</p>
 </footer>

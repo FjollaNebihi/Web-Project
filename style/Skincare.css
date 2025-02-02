@@ -15,6 +15,21 @@ p {
   padding-top: 10px;
   margin-bottom: 20px;
 }
+#created{
+  margin-bottom:255px;
+  margin-left:190px;
+  border-radius:10px;
+  height:30px;
+  width:150px;
+  background-color:#ffffff;
+  border:1px solid #FF8BA0;
+  width:100px;
+  font-weight: bold;
+  font-size:12px;
+  position: absolute;
+  color:#FF8BA0;
+
+}
 
 .image {
   height: 240px;
