@@ -87,7 +87,7 @@ function ndrroTekstin(){
   sliderText.textContent = teksti[i];
 }
 
-setInterval(ndrroTekstin, 4000);
+setInterval(ndrroTekstin, 4500);
 </script>
 
   
