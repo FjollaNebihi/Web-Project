@@ -9,6 +9,7 @@ include_once 'Database.php';
 session_start();
 
 
+
 if(!isset($_SESSION['user_id'])){
   header("Location:login.php");
   exit;
@@ -197,7 +198,7 @@ a{
                 
                 <td><a href='EditProduct.php?id=$produktet[ProductID]'>Edit</a></td> <!-- Link për redaktim me ID -->
                 <td><a href='DeleteProduct.php?id=$produktet[ProductID]'>Delete</a></td> <!-- Link për fshirje me ID -->
-            
+               
             </tr>
             
           ";
