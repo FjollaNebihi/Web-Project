@@ -79,7 +79,7 @@ h1{
 }
 #forma{
     padding: 20px;
-    background-color:lightblue;
+    background-color:CF7793;
     border-radius:20px;
     position: absolute;
     margin-left:37%;
@@ -87,7 +87,7 @@ h1{
 }
 #btn{
     transition:0.8s;
-    background-color:violet;
+    background-color:F1A5AD;
     border:0;
     border-radius:10px;
     padding:15px;

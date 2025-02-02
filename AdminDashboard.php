@@ -166,7 +166,7 @@ a{
       <th>Description</th>
       
   
-      <th class="edit"> <a href="edit.html">Edit Product</a></th>
+      <th class="edit">Edit Product</a></th>
       <th class="delete">Delete Product</th> 
       <th class="edit"><a href="AddProduct.php">Add Product</a></th>
   </tr>
@@ -222,8 +222,7 @@ a{
         <th>Username</th>
         <th>Email</th>
         <th>Role</th>
-       
-        <th class="edit"> <a href="EditUser.php">Edit</a></th>
+        <th class="edit">Edit</a></th>
         <th class="delete">Delete</th> 
         <th>Password</th>
        
@@ -240,7 +239,7 @@ a{
                 <td>$user[id]</td> <!-- ID e përdoruesit -->
                 <td>$user[first_name]</td> <!-- Emri i përdoruesit -->
                 <td>$user[last_name]</td> <!-- Mbiemri i përdoruesit -->
-                 <td>$user[username]</td> <!-- Emri i përdoruesit për hyrje -->
+                <td>$user[username]</td> <!-- Emri i përdoruesit për hyrje -->
                 <td>$user[email]</td> <!-- Email-i i përdoruesit -->
                 <td>$user[role]</td>
                 
