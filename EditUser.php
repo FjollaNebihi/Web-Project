@@ -14,7 +14,7 @@ $sql = "SELECT * FROM user WHERE id = $usr_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // Output data of the row 
+    
     $row = $result->fetch_assoc();
 } else {
     echo "No record found";

@@ -1,12 +1,13 @@
 <?php
 include_once 'CRUDProduct.php';
+include_once 'Database.php';
 
 if (isset($_GET['ProductID']) && is_numeric($_POST['ProductID'])) {
-    $productId = intval($_GET['ProductID']); // Sanitization
+    $productId = intval($_GET['ProductID']); 
 
     $ProductRepo = new CRUDProduct();
 
-    if ($ProductRepo->deleteProduct($productId)) { // Ensure deletion was successful
+    if ($ProductRepo->deleteProduct($productId)) { 
         header("Location: AdminDashboard.php?msg=ProductDeleted");
         exit();
     } else {

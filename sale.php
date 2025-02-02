@@ -180,7 +180,7 @@ $conn->close();
                     <span>|</span>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <span>|</span>
-                    <a href="/contact" class="footer-link">Contact us</a>
+                    <a href="ContactUs.php" class="footer-link">Contact us</a>
                 </div>  
                 
                 <p>© 2024 My Website. All rights reserved.</p>
