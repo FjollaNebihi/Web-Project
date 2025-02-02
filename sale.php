@@ -122,7 +122,7 @@ setInterval(ndrroTekstin, 4000);
       width: 105px;
       height:30px;
       border-radius:15px; 
-      background-color: #FF8BA0;
+      background-color: #FF8BA0;  
   color:white;
   border:1px solid #FF8BA0;box-shadow:2px 2px 2px black;">LOG OUT</button>
 </a>

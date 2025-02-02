@@ -19,7 +19,8 @@ if(!isset($_SESSION['user_id'])){
  
   <link rel="stylesheet" href="style/bestsellers.css">
 <script src="script/slider.js"></script>
-
+<script src="script/Slideri2.js"></script>
+<script src="script/Slideri3.js"></script>
 
 </head>
 <body>
@@ -89,6 +90,8 @@ function ndrroTekstin(){
 }
 
 setInterval(ndrroTekstin, 4000);
+
+
 </script>
 
 
@@ -185,8 +188,8 @@ setInterval(ndrroTekstin, 4000);
    
       <div id="produktet"class="produkti-6"><button id="button">BEST SELLER</button>
         <button id="button-2">ADD TO FAVORITES</button>
-        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow">
-                        <button onclick="nFotoTjeter()" style="   margin-right:-420px;
+        <img src="img/R (1).png" alt="Small Image" class="small-image" id="slideshow1">
+                        <button onclick="FotoTjeter()" style="  margin-right:-420px;
                         background-color:#ffffff;
                         border:1px solid #FF8BA0;
                         color:#FF7084;
@@ -194,7 +197,7 @@ setInterval(ndrroTekstin, 4000);
                         margin-top:260px;
                         margin-bottom: -8px;
                         width:90px;
-                        height: 22px;">...see more</button>
+                        height: 22px;margin-left:-80px;">...see more</button>
                         <p id="text">Rhode Peptide Lip Tints</p>
                         <p id="cmimi">$23.00.</p>
                         
@@ -265,15 +268,15 @@ setInterval(ndrroTekstin, 4000);
 
         <div id="produktet"class="produkti-16"><button id="button">BEST SELLER</button>
           <button id="button-2">ADD TO FAVORITES</button>
-          <img src="img/2faced2.png" alt="Small Image" class="small-image" id="slideshow">
-          <button onclick="FotoTjeter()"  style=" margin-right:-420px;
+          <img src="img/2faced2.png" alt="Small Image" class="small-image" id="slideshow2">
+          <button onclick="FotoTjeter2()"  style=" margin-right:-420px;
               background-color:#ffffff;
             border:1px solid #FF8BA0;
             color:#FF7084;
-              border-radius: 7px;
+              border-radius: 7px; 
               margin-top:260px;
               margin-bottom: -8px;
-              width:90px;
+              width:90px;margin-left:-80px;
               height: 22px;">...see more</button>
             <p id="text">Too Faced Blush Shades</p>
             <p id="cmimi">$23.60</p>
