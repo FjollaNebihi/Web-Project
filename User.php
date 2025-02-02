@@ -70,6 +70,14 @@ class User{
       }
       return false;
     } 
-}
+    public function isLoggedIn() {
+      return isset($_SESSION['username']);
+  }
 
+  public function logout() {
+      session_start();
+      session_destroy();
+      return "Logged out successfully.";
+  }
+}
 ?>

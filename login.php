@@ -15,16 +15,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   $user->LogIn($username, $password);
 
-
   if($user->LogIn($username, $password)) {
     if($_SESSION['role'] === 'Admin'){
-        header("Location:index.php");
+        header("Location: AdminDashboard.php");
   } else {
-      header("Location:index.php"); 
+      header("Location: index.php"); 
   }
   exit();
 } else {
   echo "Invalid login credentials";
+}
+if(!$user->LogIn($username, $password)) {
+  session_unset();
+  session_destroy();
 }
 }
 ?>

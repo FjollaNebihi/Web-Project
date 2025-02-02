@@ -20,6 +20,7 @@ if(!isset($_SESSION['user_id'])){
   <link rel="stylesheet" href="style/bestsellers.css">
 <script src="script/slider.js"></script>
 
+
 </head>
 <body>
   
@@ -162,6 +163,7 @@ setInterval(ndrroTekstin, 4000);
       <button id="button">BEST SELLER</button>
       <button id="button-2">ADD TO FAVORITES</button>
       <img src="img/RareBeautyBlush.png" alt="Small Image" class="small-image3">
+      
       <p id="text">Mini Soft Pinch Liquid Blush</p>
       <p id="cmimi">$14.00</p></div>
       

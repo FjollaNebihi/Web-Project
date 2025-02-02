@@ -140,8 +140,10 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "SELECT * FROM produktet ORDER BY ProductID ASC LIMIT 16";  
+$sql = "SELECT * FROM produktet ORDER BY ProductID ASC LIMIT 16 ";  
 $statement = $conn->query($sql);
+
+
 
 if (!$statement) {
     die("Query failed: " . $conn->error); 

@@ -19,7 +19,7 @@ let error2 = document.getElementById("error2");
     password.focus();
  } 
  else {
-    alert("Logged in successfully!")
+   
     return true;
  } 
  alert("Trouble logging in?")
