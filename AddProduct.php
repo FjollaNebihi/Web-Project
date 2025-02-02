@@ -14,14 +14,14 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
 
   
-  $imageName = $_FILES['Image']['name']; // File name
-    $imageTmpName = $_FILES['Image']['tmp_name']; // Temporary location
-    $imagePath = "img/" . $imageName; // Final path (you can manually copy-paste paths)
+  $imageName = $_FILES['Image']['name'];
+    $imageTmpName = $_FILES['Image']['tmp_name'];
+    $imagePath = "img/" . $imageName; 
 
-    // Move the image
+   
     move_uploaded_file($imageTmpName, $imagePath);
 
-    // Store only the image path in the database
+
     $produktet->RegisterProduct($imagePath, $Product_Name, $Price, $Description);
     header("Location: AdminDashboard.php");
     exit;

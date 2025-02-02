@@ -19,6 +19,7 @@ if(!isset($_SESSION['user_id'])){
  
   <link rel="stylesheet" href="style/bestsellers.css">
 <script src="script/slider.js"></script>
+
 </head>
 <body>
   
@@ -149,7 +150,8 @@ setInterval(ndrroTekstin, 4000);
     <div id="produktet" class="produkti-2">
       <button id="button">BEST SELLER</button>
       <button id="button-2">ADD TO FAVORITES</button>
-      <img src="img/NarsConcelear.png" alt="Small Image" class="small-image2">
+      <img src="img/NarsConcelear.png" alt="Small Image" class="small-image2" >
+ 
       <p id="text">Creamy Concelear with Medium Coverage</p>
       <p id="cmimi">$36.00</p></div>
       
