@@ -155,11 +155,15 @@ if ($statement->num_rows > 0) {
                 <button id="button">' . htmlspecialchars($row["Description"]) . '</button>
                 <img src="' . htmlspecialchars($row["Image"]) . '" class="image">
                 <p id="text">' . htmlspecialchars($row["Product_Name"]) . '</p>
-                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>
-              </div>'; 
+                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>';
+        if ($_SESSION['role'] === 'Admin') {
+            echo '<button id="created">Created By: ' . htmlspecialchars($row["Created_By"]) . '</button>';
+        }
+
+        echo '</div>'; 
     }
 } else {
-    echo "<p>No products found.</p>";
+    echo "No products found.";
 }
 
 $conn->close();

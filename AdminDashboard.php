@@ -198,6 +198,7 @@ a{
                 
                 <td><a href='EditProduct.php?id=$produktet[ProductID]'>Edit</a></td> <!-- Link për redaktim me ID -->
                 <td><a href='DeleteProduct.php?id=$produktet[ProductID]'>Delete</a></td> <!-- Link për fshirje me ID -->
+                <td>$produktet[Created_By]</td> <!-- Emri i përdoruesit për hyrje -->
                
             </tr>
             

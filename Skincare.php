@@ -155,15 +155,40 @@ if ($statement->num_rows > 0) {
                 <button class="skin">' . htmlspecialchars($row["Description"]) . '</button>
                 <img src="' . htmlspecialchars($row["Image"]) . '" class="image">
                 <p id="description">' . htmlspecialchars($row["Product_Name"]) . '</p>
-                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>
-              </div>'; 
+                <p id="cmimi">' . htmlspecialchars($row["Price"]) . '</p>';
+          if ($_SESSION['role'] === 'Admin') {
+            echo '<button style=" margin-bottom:255px;
+  margin-left:190px;
+  border-radius:10px;
+  height:30px;
+  width:150px;
+  background-color:#ffffff;
+  border:1px solid #FF8BA0;
+  width:100px;
+  font-weight: bold;
+  font-size:12px;
+  position: absolute;
+  color:#FF8BA0;">Created By: ' . htmlspecialchars($row["Created_By"]) . '</button>';
+        }
+
+        echo '</div>'; 
     }
 } else {
-    echo "<p>No products found.</p>";
+    echo "No products found.";
 }
 
 $conn->close();
 ?>
+<div id="skincare">
+        <div class="ordinary-container">
+            <img src="img/TheOrdinary.png" alt="The Ordinary" class="ordinary-image">
+            <div class="ordinary-content">
+                <h3 class="ordinary-title">Skincare Beyond Routine</h3>
+                <p class="ordinary-text">Schedule an appointment with our professional team to discover personalized solutions.</p>
+                <button class="appointment-button">Book Now</button>
+            </div>
+        </div>
+    </div>
     </body>
 <footer class="footer">
     <div class="footer-links">

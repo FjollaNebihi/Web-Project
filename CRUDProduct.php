@@ -19,12 +19,13 @@ class CRUDProduct{
     $Product_Name=$produktet->getProduct_Name();
     $Price=$produktet->getPrice();
     $Description=$produktet->getDescription();
+    $Created_By=$produktet->getCreated();
 
-    $sql="INSERT INTO produktet (ProductID , Image , Product_Name, Price,Description) VALUES ( ? ,? ,? ,?,?,?)";
+    $sql="INSERT INTO produktet (ProductID , Image , Product_Name, Price,Description, Create_By) VALUES ( ? ,? ,? ,?,?,?)";
 
     $statement=$conn->prepare($sql);
 
-    $statement->execute ([$ProductID,$Image,$Product_Name,$Price,$Description]);
+    $statement->execute ([$ProductID,$Image,$Product_Name,$Price,$Description,$Create_By]);
     if($statement->execute()){
       return true;
       echo "<script> alert ('Product has been inserted')</script>";
@@ -48,7 +49,7 @@ class CRUDProduct{
 
     return $produktet;
   }
-  function updateProduct($ProductID,$Image,$Product_Name,$Price,$Description){
+  function updateProduct($ProductID,$Image,$Product_Name,$Price,$Description,$Created_By){
 
     $imagePath=$Image;
     $modified=$_SESSION['username'];
@@ -58,7 +59,8 @@ class CRUDProduct{
                         Product_Name='$Product_Name',
                 
                         Price='$Price' ,
-                        Description='$Description' WHERE ProductID=$ProductID";
+                        Description='$Description',
+                        Created_By='$Created_By' WHERE ProductID=$ProductID";
 
     if($this->conn->query($updateProduct)===true){
       echo "Product was edited by : " .$modified;

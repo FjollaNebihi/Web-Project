@@ -30,6 +30,8 @@ if ($result->num_rows > 0) {
     <input type="text" name="Product_Name" value="<?php echo $row['Product_Name']; ?>" ><br><br>
     <input type="text" name="Price" value="<?php echo $row['Price']; ?>" ><br><br>
     <input type="text" name="Description" value="<?php echo $row['Description']; ?>" ><br><br>
+    <input type="text" name="Created_By" value="<?php echo $row['Created_By']; ?>" ><br><br>
+    
     <input type="submit" value="Update" id="btn">
 </form>
 </div>
@@ -41,14 +43,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['Product_Name'];
     $price = $_POST['Price'];
     $desc = $_POST['Description'];
-    
+    $create=$_POST['Created_By'];
 
     $sql_up = "UPDATE produktet 
           SET 
               Image = '$image', 
               Product_Name = '$name', 
               Price = '$price', 
-              Description = '$desc' 
+              Description = '$desc',
+              Created_By='$create'
           WHERE ProductID = '$prod_id'";
 
     if ($conn->query($sql_up) === TRUE) {
